@@ -3,23 +3,22 @@ import { useState } from "react";
 import * as images from "../../img/index.js";
 
 function CatalogueTodaPosicion() {
-
     const CatalogueTodaPosicion = [
         {
           id: 1,
-          title: "UAP2 FULTECH",
+          title: "UAP2 FUELTECH",
           img1: [images.UAP2],
           img2: [images.todaPosicion],
-          img3: [images.lDistancia],
-          img4: [images.Regional],
+          img3: [images.Regional],
+          img4: [images.lDistancia],
           caract1:
-            "- Posee expulsores de piedras que brindan resistencia a las perforaciones causadas a la carcasa.",
+          "- Posee expulsores de piedras que brindan resistencia a las perforaciones causadas a la carcasa.",
           caract2:
-            "- El diseño de hombro ranurado y estrías triangulares ofre cen mejor tracción en todas las condiciones. ",
+            "- El diseño de hombro ranurado y estrías triangulares ofrecen mejor tracción en todas las condiciones. ",
           caract3:
-            "- Los puentes de amarre en las costillas centrales ayudan a proporcionar estabilidad y minimizar el desgaste ir regular.",
+            "- Los puentes de amarre en las costillas centrales ayudan a proporcionar estabilidad y minimizar el desgaste irregular. ",
           caract4:
-            "- El UAP2 cumple la normativa SmartWay de la Agencia de Protección Ambiental (Environmental Protection Agency, EPA) y el cumplimiento de las disposiciones de la Junta de Recursos del Aire de California (California Air Resources Board, CARB)",
+            "-  El UAP2 cumple la normativa SmartWay de la Agencia de Protección Ambiental (Environmental Protection Agency, EPA) y el cumplimiento de las disposiciones de la Junta de Recursos del Aire de California (California Air Resources Board, CARB)",
           ancho1: "190",
           ancho2: "200",
           ancho3: "210",
@@ -43,22 +42,15 @@ function CatalogueTodaPosicion() {
           img1: [images.R4200],
           img2: [images.todaPosicion],
           img3: [images.Regional],
-          ancho1: "190",
-          ancho2: "200",
-          ancho3: "210",
-          ancho4: "220",
-          ancho5: "230",
-          ancho6: "240",
-          ancho7: "250",
-          ancho8: "260",
-          profundidad1: "14.3",
-          profundidad2: "14.3",
-          profundidad3: "14.3",
-          profundidad4: "14.3",
-          profundidad5: "14.3",
-          profundidad6: "14.3",
-          profundidad7: "14.3",
-          profundidad8: "14.3",
+          img4: [images.lDistancia],
+          ancho1: "9",
+          ancho2: "230",
+          ancho3: "240",
+          ancho4: "212",
+          profundidad1: "15.9",
+          profundidad2: "15.9",
+          profundidad3: "15.9",
+          profundidad4: "15.9",
         },
         {
           id: 3,
@@ -109,7 +101,7 @@ function CatalogueTodaPosicion() {
           ancho1: "190",
           ancho2: "200",
           ancho3: "210",
-          anchO4: "220",
+          ancho4: "220",
           ancho5: "230",
           ancho6: "240",
           ancho7: "250",

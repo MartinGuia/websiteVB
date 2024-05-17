@@ -37,6 +37,8 @@ const Modal = ({ item, onClose }) => {
             <p>{item.ancho6}</p>
             <p>{item.ancho7}</p>
             <p>{item.ancho8}</p>
+            <p>{item.ancho9}</p>
+            <p>{item.ancho10}</p>
           </div>
           <div>
             <h1>Profundidad</h1>
@@ -48,6 +50,8 @@ const Modal = ({ item, onClose }) => {
             <p>{item.profundidad6}</p>
             <p>{item.profundidad7}</p>
             <p>{item.profundidad8}</p>
+            <p>{item.profundidad9}</p>
+            <p>{item.profundidad10}</p>
           </div>
         </section>
 
