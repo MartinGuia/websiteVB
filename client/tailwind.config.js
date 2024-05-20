@@ -10,7 +10,8 @@ module.exports = {
         after2: "-10px 10px 0 #232949",
       },
       colors:{
-        primary: "#232949"
+        primary: "#232949",
+        primaryVB: "#02457A"
       },
     },
   },

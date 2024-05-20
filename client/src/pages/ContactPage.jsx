@@ -1,4 +1,5 @@
 import Menu from "../components/Menu.jsx";
+import Contact from "../components/ui/Contact.jsx";
 
 function ContactPage() {
   return (
@@ -6,7 +7,9 @@ function ContactPage() {
       <header>
         <Menu />
       </header>
-      <main>Contacto</main>
+      <main>
+        <Contact />
+      </main>
     </>
   );
 }

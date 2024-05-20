@@ -1,24 +1,7 @@
-
-// const Modal = ({ isOpen, onClose, children, idUsuario }) => {
-//   if (!isOpen) return null;
-
-//   return (
-//     <div className="fixed z-10 inset-0 overflow-y-auto">
-//       <div className="flex items-center justify-center min-h-screen">
-//         <div className="fixed inset-0 transition-opacity" onClick={onClose}>
-//           <div className="absolute inset-0 bg-black opacity-50"></div>
-//         </div>
-//         <div className="relative bg-white rounded-lg shadow-xl w-96 max-[541px]:w-80 max-[281px]:w-60">
-//           <div className="p-8">{children}</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 const Modal = ({ item, onClose }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-      <div className="bg-white p-8 rounded-lg w-[50%] shadow-lg">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 max-[540px]:text-sm">
+      <div className="bg-white p-8 rounded-lg w-[50%] shadow-lg max-[430px]:w-[70%] max-[344px]:w-[90%]">
         <h2 className="text-xl font-bold mb-4">{item.title}</h2>
         <section className="text-justify">
         <p className="mb-2">{item.caract1}</p>

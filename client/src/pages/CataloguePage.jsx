@@ -4,8 +4,9 @@ import { useState } from "react";
 import CatalogueTodaPosicion from "../components/ui/CatalogueTodaPosicion.jsx";
 import CatalogueTraccion from "../components/ui/CatalogueTraccion.jsx";
 import CatalogueEjeLibre from "../components/ui/CatalogueEjeLibre.jsx";
+import { motion } from "framer-motion";
 
-function CataloguePage() {
+function CataloguePage({delay}) {
   const [vista, setVista] = useState("major");
 
   const Info = [
@@ -57,6 +58,12 @@ function CataloguePage() {
   const Major = () => (
     <>
       {/* Section de la simbología de las posiciones  */}
+      <motion.div
+      className=""
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: delay, duration: 1 }}
+    >
       <div className="flex flex-col items-center mt-4">
         <h1 className="flex justify-center text-3xl font-bold mt-4">
           Aplicación
@@ -64,10 +71,16 @@ function CataloguePage() {
         <div className="w-[80%] bg-slate-100 mt-4 shadow-lg rounded-lg border-[1px]">
           {Info.map((inf) => (
             <article className="flex mt-5 mb-5" key={inf.id}>
-              <img src={inf.img} alt="" className="w-[3%] h-[2%]" />
+              <img
+                src={inf.img}
+                alt=""
+                className="w-[3%] h-[2%] max-[853px]:w-[10%]"
+              />
               <span className="ml-4">
-                <h1 className="font-bold text-blue-800">{inf.title}</h1>
-                <p className="text-sm text-blue-500 font-semibold">
+                <h1 className="font-bold text-blue-800 max-[540px]:text-sm">
+                  {inf.title}
+                </h1>
+                <p className="text-sm text-blue-500 font-semibold max-[540px]:text-xs">
                   {inf.description}
                 </p>
               </span>
@@ -75,6 +88,8 @@ function CataloguePage() {
           ))}
         </div>
       </div>
+    </motion.div>
+      
     </>
   );
   const TodaPosicion = () => (
@@ -116,50 +131,67 @@ function CataloguePage() {
         <Menu />
       </header>
       <main>
-        <section className="flex flex-col items-center mt-4">
-          <div>
-            <h1 className="flex justify-center text-3xl font-bold">Posición</h1>
-          </div>
-          <div className="flex justify-around mt-5">
-            <button
-              onClick={mostrarTodaPosicion}
-              className=" flex flex-col items-center w-[18%] h-auto p-3 bg-slate-100 shadow-lg rounded-lg hover:-translate-y-3 duration-700 border-[1px]"
+        <motion.div
+          className=""
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <section className="flex flex-col items-center mt-4">
+            <div>
+              <h1 className="flex justify-center text-3xl font-bold">
+                Posición
+              </h1>
+            </div>
+            <motion.div
+              className=""
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: delay, duration: 1 }}
             >
-              <img src={images.todaPosicion} alt="" className="mt-1" />
-              <h1 className="font-bold">Toda Posición</h1>
-              <p className="text-center text-sm mt-2 font-semibold">
-                Este tipo de llantas puede ser utilizado en todos los ejes del
-                vehículo.
-              </p>
-            </button>
+              <div className="flex justify-around mt-5 max-[430px]:flex-col max-[430px]:items-center">
+              <button
+                onClick={mostrarTodaPosicion}
+                className="text-black flex flex-col items-center w-[18%] h-auto p-3 bg-slate-100 shadow-lg rounded-lg hover:-translate-y-3 duration-700 border-[1px] max-[540px]:w-[25%] max-[430px]:w-[90%] max-[430px]:mb-4"
+              >
+                <img src={images.todaPosicion} alt="" className="mt-1" />
+                <h1 className="font-bold">Toda Posición</h1>
+                <p className="text-center text-sm mt-2 font-semibold max-[540px]:text-xs">
+                  Este tipo de llantas puede ser utilizado en todos los ejes del
+                  vehículo.
+                </p>
+              </button>
 
-            <button
-              onClick={mostrarTraccion}
-              className=" flex flex-col items-center w-[18%] h-auto p-3 bg-slate-100 shadow-lg rounded-lg hover:-translate-y-3 duration-700 border-[1px]"
-            >
-              <img src={images.traccion} alt="" className="mt-1" />
-              <h1 className="font-bold">Tracción</h1>
-              <p className="text-center text-sm mt-2 font-semibold">
-                Neumático ideal para ejes de tracción.
-              </p>
-            </button>
+              <button
+                onClick={mostrarTraccion}
+                className="text-black flex flex-col items-center w-[18%] h-auto p-3 bg-slate-100 shadow-lg rounded-lg hover:-translate-y-3 duration-700 border-[1px] max-[540px]:w-[25%] max-[430px]:w-[90%] max-[430px]:mb-4"
+              >
+                <img src={images.traccion} alt="" className="mt-1" />
+                <h1 className="font-bold">Tracción</h1>
+                <p className="text-center text-sm mt-2 font-semibold max-[540px]:text-xs">
+                  Neumático ideal para ejes de tracción.
+                </p>
+              </button>
 
-            <button
-              onClick={mostrarEjeLibre}
-              className=" flex flex-col items-center w-[18%] h-auto p-3 bg-slate-100 shadow-lg rounded-lg hover:-translate-y-3 duration-700 border-[1px]"
-            >
-              <img src={images.ejeLibre} alt="" className="mt-1" />
-              <h1 className="font-bold">Eje Libre</h1>
-              <p className="text-center text-sm mt-2 font-semibold">
-                Neumático para uso exclusivo en semi-remolques, dollies y
-                patines.{" "}
-              </p>
-            </button>
-          </div>
-        </section>
+              <button
+                onClick={mostrarEjeLibre}
+                className="text-black flex flex-col items-center w-[18%] h-auto p-3 bg-slate-100 shadow-lg rounded-lg hover:-translate-y-3 duration-700 border-[1px] max-[540px]:w-[25%] max-[430px]:w-[90%]"
+              >
+                <img src={images.ejeLibre} alt="" className="mt-1" />
+                <h1 className="font-bold">Eje Libre</h1>
+                <p className="text-center text-sm mt-2 font-semibold max-[540px]:text-xs">
+                  Neumático para uso exclusivo en semi-remolques, dollies y
+                  patines.{" "}
+                </p>
+              </button>
+            </div>
+            </motion.div>
+            
+          </section>
 
-        {/* Tarjetas de catalogo */}
-        <section className="mt-5">{contenido}</section>
+          {/* Tarjetas de catalogo */}
+          <section className="mt-5">{contenido}</section>
+        </motion.div>
       </main>
     </>
   );

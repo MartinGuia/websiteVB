@@ -48,12 +48,12 @@ function Menu() {
         <div className="w-[50%] flex items-center justify-evenly max-[861px]:w-[65%] max-[913px]:w-[70%] max-[768px]:justify-end">
           {/* Icono del menú */}
           <HiOutlineMenuAlt3
-            className="text-3xl cursor-pointer mr-4 md:hidden"
+            className="text-3xl cursor-pointer mr-4 md:hidden text-black"
             onClick={() => setShowMenu(!showMenu)} // Cambia el estado del menú desplegable al hacer clic en el icono del menú
           />
           {/* Menú desplegable */}
           <ul
-            className={`md:hidden absolute right-1 top-full bg-white border border-gray-200 rounded-lg shadow-lg p-4 ${
+            className={`md:hidden absolute right-1 top-full bg-white text-black border border-gray-200 rounded-lg shadow-lg p-4 ${
               showMenu ? "block" : "hidden" // Mostrar u ocultar el menú desplegable según el estado
             }`}
           >
@@ -79,8 +79,8 @@ function Menu() {
                 key={menu.id}
                 className={
                   location.pathname === menu.to
-                    ? "border-y-[3px] border-yellow-400 text-blue-500 list-none py-2"
-                    : "list-none"
+                    ? "border-y-[3px] border-yellow-400 text-blue-500 list-none py-2 "
+                    : " hover:text-blue-500 list-none "
                 }
               >
                 <Link to={menu.to}>

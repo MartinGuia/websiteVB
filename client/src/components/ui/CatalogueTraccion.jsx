@@ -98,6 +98,14 @@ function CatalogueTraccion() {
       img1: [images.B729Z],
       img2: [images.traccion],
       img3: [images.Regional],
+      caract1:
+        "- Mayor número de estrías y bloques divididos que incrementan los puntos de contacto para una mayor tracción.",
+      caract2:
+        "- Diseño versátil para diversas condiciones de operación.",
+      caract3:
+        "- Cuatro ranuras circunferenciales ayudan a canalizar el agua lejos de la huella para lograr unan firme en condiciones húmedas.",
+      caract4:
+        "- El patrón especial en cada costilla mejora la tracción.",
       ancho1: "240",
       ancho2: "250",
       ancho3: "260",
