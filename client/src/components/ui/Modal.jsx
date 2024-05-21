@@ -1,7 +1,7 @@
 const Modal = ({ item, onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 max-[540px]:text-sm">
-      <div className="bg-white p-8 rounded-lg w-[50%] shadow-lg max-[430px]:w-[70%] max-[344px]:w-[90%]">
+      <div className="bg-white p-8 rounded-lg w-[50%] shadow-lg max-[430px]:w-[70%] max-[344px]:w-[90%] text-black">
         <h2 className="text-xl font-bold mb-4">{item.title}</h2>
         <section className="text-justify">
         <p className="mb-2">{item.caract1}</p>

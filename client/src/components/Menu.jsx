@@ -80,7 +80,7 @@ function Menu() {
                 className={
                   location.pathname === menu.to
                     ? "border-y-[3px] border-yellow-400 text-blue-500 list-none py-2 "
-                    : " hover:text-blue-500 list-none "
+                    : " hover:text-blue-500 list-none text-black"
                 }
               >
                 <Link to={menu.to}>

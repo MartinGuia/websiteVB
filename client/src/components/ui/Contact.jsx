@@ -5,8 +5,8 @@ function Contact() {
     <>
       <main className="flex justify-center text-black">
         <div className="w-[90%] justify-evenly mt-6 relative bg-slate-100 rounded-xl p-4 shadow-lg">
-          <div className="flex md:flex-col max-[541px]:flex-col">
-            <section className="w-[50%] flex flex-col md:w-[100%] max-[541px]:w-[100%]">
+          <div className="flex max-[768px]:flex-col max-[541px]:flex-col">
+            <section className="w-[50%] flex flex-col max-[768px]:w-[100%] max-[541px]:w-[100%]">
               <article>
                 <div className="flex flex-col items-center">
                   <h1 className="text-4xl font-bold max-[540px]:text-2xl">Llamanos</h1>
@@ -28,7 +28,7 @@ function Contact() {
                 </div>
               </article>
             </section>
-            <section className="w-[50%] flex flex-col items-center justify-center md:w-[100%] md:mt-10 max-[541px]:w-[100%]">
+            <section className="w-[50%] flex flex-col items-center justify-center max-[768px]:w-[100%] max-[768px]:mt-10 max-[541px]:w-[100%]">
               <h1 className="flex justify-center text-4xl font-bold max-[540px]:text-2xl max-[540px]:mt-5">
                 Ubicación
               </h1>
@@ -41,8 +41,8 @@ function Contact() {
           </div>
           <section className="w-[100%] mt-10 max-[540px]:mt-4">
             <article className="flex justify-evenly">
-              <img className="w-[10%] h-[10%] md:w-[20%] md:h-[20%] max-[540px]:w-[30%]" src={images.logoVB} alt="" />
-              <img className="w-[10%] h-[10%] md:w-[20%] md:h-[20%] max-[540px]:w-[30%]" src={images.bandag} alt="" />
+              <img className="w-[10%] h-[10%] max-[768px]:w-[20%] max-[768px]:h-[20%] max-[540px]:w-[30%]" src={images.logoVB} alt="" />
+              <img className="w-[10%] h-[10%] max-[768px]:w-[20%] max-[768px]:h-[20%] max-[540px]:w-[30%]" src={images.bandag} alt="" />
             </article>
           </section>
         </div>

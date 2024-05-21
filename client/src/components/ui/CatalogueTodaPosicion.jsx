@@ -1,5 +1,5 @@
 import Modal from "./Modal";
-import { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as images from "../../img/index.js";
 
 function CatalogueTodaPosicion() {
@@ -317,15 +317,40 @@ function CatalogueTodaPosicion() {
   const handleCloseModal = () => {
     setSelectedItem(null);
   };
+  
+  const [visibleCards, setVisibleCards] = useState([]);
+
+  const containerRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const cardsInView = entries.filter((entry) => entry.isIntersecting).map((entry) => entry.target);
+      setVisibleCards(cardsInView);
+    }, { threshold: 0.5 }); // Puedes ajustar el umbral según tus necesidades
+  
+    if (containerRef.current) {
+      containerRef.current.childNodes.forEach((card) => {
+        observer.observe(card);
+      });
+    }
+  
+    return () => {
+      if (containerRef.current) {
+        containerRef.current.childNodes.forEach((card) => {
+          observer.unobserve(card);
+        });
+      }
+    };
+  }, []);
+
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-3" ref={containerRef}>
         {CatalogueTodaPosicion.map((card) => (
           <button
             key={card.id}
             onClick={() => handleOpenModal(card)}
-            className="flex flex-col border-[1px] rounded-xl items-center w-full shadow-xl hover:-translate-y-3 duration-700"
-          >
+            className={`flex flex-col border-[1px] rounded-xl items-center w-full shadow-xl hover:-translate-y-3 duration-700  bg-slate-100 ${visibleCards.includes(card) ? " opacity-0" : "animate-fadeIn"}`}
+          > 
             <h1 className="bg-blue-950 w-full rounded-t-lg flex justify-center text-white font-semibold p-2 shadow-md">
               {card.title}
             </h1>

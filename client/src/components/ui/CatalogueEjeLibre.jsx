@@ -1,5 +1,5 @@
 import Modal from './Modal'
-import { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as images from "../../img/index.js";
 
 
@@ -20,8 +20,12 @@ function CatalogueEjeLibre() {
         "- Costilla ecualizadora que promueve le desgaste uniforma en las costillas principlaes, para obtener un alto kilometraje de retiro.",
       caract4:
         "-  El B135 Fueltech cumple la normativa SmartWay de la Agencia de Protección Ambiental (Environmental Protection Agency, EPA) y el cumplimiento de las disposiciones de la Junta de Recursos del Aire de California (California Air Resources Board, CARB).",
-      ancho1: "390",
-      ancho2: "400",
+      ancho1: "180",
+      ancho2: "210",
+      ancho3: "220",
+      ancho4: "230",
+      ancho5: "240",
+      ancho6: "250",
       profundidad1: "8.7",
       profundidad2: "8.7",
     },
@@ -155,14 +159,39 @@ function CatalogueEjeLibre() {
   const handleCloseModal = () => {
     setSelectedItem(null);
   };
+
+  const [visibleCards, setVisibleCards] = useState([]);
+
+  const containerRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const cardsInView = entries.filter((entry) => entry.isIntersecting).map((entry) => entry.target);
+      setVisibleCards(cardsInView);
+    }, { threshold: 0.5 }); // Puedes ajustar el umbral según tus necesidades
+  
+    if (containerRef.current) {
+      containerRef.current.childNodes.forEach((card) => {
+        observer.observe(card);
+      });
+    }
+  
+    return () => {
+      if (containerRef.current) {
+        containerRef.current.childNodes.forEach((card) => {
+          observer.unobserve(card);
+        });
+      }
+    };
+  }, []);
+
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-3" ref={containerRef}>
         {CatalogueEjeLibre.map((card) => (
           <button
             key={card.id}
             onClick={() => handleOpenModal(card)}
-            className="flex flex-col border-[1px] rounded-xl items-center w-full shadow-xl hover:-translate-y-3 duration-700 "
+            className={`flex flex-col border-[1px] rounded-xl items-center w-full shadow-xl hover:-translate-y-3 duration-700  bg-slate-100 ${visibleCards.includes(card) ? " opacity-0" : "animate-fadeIn"}`}
           >
             <h1 className="bg-blue-950 w-full rounded-t-lg flex justify-center text-white font-semibold p-2">
               {card.title}

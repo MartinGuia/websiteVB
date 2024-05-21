@@ -26,7 +26,7 @@ function ServicePage() {
       img: [images.cardeo],
     },
     {
-      title: "Reparaciones y aplicacioón d ehule cojín",
+      title: "Reparaciones y aplicación de hule cojín",
       content:
         "Una capa de hule sin vulcanizar es extraida contra la superficie preparada del casco, dejándolo listo para recibir la nueva banda de rodamiento.",
         img: [images.aplicacionCojin]
@@ -63,20 +63,20 @@ function ServicePage() {
         <Menu />
       </header>
       <main className="">
-        <div className="container mx-auto py-8">
+        <div className="container mx-auto py-8 ">
           <div className="flex justify-center items-center">
-            <div className="w-full md:w-2/3 lg:w-1/2">
+            <div className="w-full md:w-2/3 lg:w-1/2 max-[430px]:w-[90%]">
               <h1 className="text-3xl font-bold mb-4">
                 Proceso de Renovado de Llantas
               </h1>
               <div className="bg-gray-200 p-4 mb-4 rounded-lg shadow-lg text-black">
-                <AnimatePresence>
+                <div>
                   <motion.div
                     key={currentStep}
                     initial={{ opacity: 0, x: "-100%" }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: "100%" }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 1 }}
                   >
                     <h2 className="text-xl font-bold mb-2">
                       {steps[currentStep - 1].title}
@@ -88,7 +88,7 @@ function ServicePage() {
                       className="w-[50%]"
                     />
                   </motion.div>
-                </AnimatePresence>
+                </div>
               </div>
               <div className="flex justify-between">
                 <button
