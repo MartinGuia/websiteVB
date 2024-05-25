@@ -1,6 +1,6 @@
 import Menu from "../components/Menu.jsx";
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import * as images from "../img/index.js";
 
 function ServicePage() {
@@ -29,27 +29,31 @@ function ServicePage() {
       title: "Reparaciones y aplicación de hule cojín",
       content:
         "Una capa de hule sin vulcanizar es extraida contra la superficie preparada del casco, dejándolo listo para recibir la nueva banda de rodamiento.",
-        img: [images.aplicacionCojin]
+      img: [images.aplicacionCojin],
     },
     {
       title: "Embandado",
-      content: "La nueva banda de rodamientos se aplica derecha y centrada en el casco.",
-      img: [images.embandado]
+      content:
+        "La nueva banda de rodamientos se aplica derecha y centrada en el casco.",
+      img: [images.embandado],
     },
     {
       title: "Encamisado",
-      content: "La llanta con la nueva banda de rodamiento se encamisa y se prepara para la vulcanización.",
-      img: [images.encamisado]
+      content:
+        "La llanta con la nueva banda de rodamiento se encamisa y se prepara para la vulcanización.",
+      img: [images.encamisado],
     },
     {
       title: "Vulcanización",
-      content: "El autoclave permite que el hule cojín vulcanice y se adhiera permanentemente a la nueva banda de rodamiento.",
-      img: [images.vulcanizado]
+      content:
+        "El autoclave permite que el hule cojín vulcanice y se adhiera permanentemente a la nueva banda de rodamiento.",
+      img: [images.vulcanizado],
     },
     {
       title: "Inspeccion final",
-      content: "Por último, se realiza un ainspección visual y manual a fin de cumplir con nuestras especificaciones de calidad. Además, se mejora la condición estética al pintar la llanta.",
-      img: [images.inspeccionFinal]
+      content:
+        "Por último, se realiza un ainspección visual y manual a fin de cumplir con nuestras especificaciones de calidad. Además, se mejora la condición estética al pintar la llanta.",
+      img: [images.inspeccionFinal],
     },
   ];
 
@@ -63,12 +67,13 @@ function ServicePage() {
         <Menu />
       </header>
       <main className="">
-        <div className="container mx-auto py-8 ">
+        <section className="container mx-auto py-8 ">
           <div className="flex justify-center items-center">
             <div className="w-full md:w-2/3 lg:w-1/2 max-[430px]:w-[90%]">
-              <h1 className="text-3xl font-bold mb-4">
+              <h1 className="text-3xl font-bold mb-1">
                 Proceso de Renovado de Llantas
               </h1>
+              <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%] mb-4" />
               <div className="bg-gray-200 p-4 mb-4 rounded-lg shadow-lg text-black">
                 <div>
                   <motion.div
@@ -110,7 +115,22 @@ function ServicePage() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section className="flex justify-center">
+          <article className="w-[90%] text-justify">
+            <div className="mb-4">
+              <h1 className="text-3xl font-bold mb-1">Renovar en lugar de comprar</h1>
+              <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%]" />
+            </div>
+            <div>
+              <p>
+                Un buen renovado ayuda a los propietarios de negocios inteligentes a incrementar el rendimiento de sus llantas y reducir sus costos de operación.
+                Hoy en día la mayoría de las flotas de camiones, aerolíneas, empresas de construcción, agricultures e incluso autobuses escolares utilizan este proceso para eficientar sus costos sin sacrificar seguridad, calidad, desempeño, tecnología, kilometraje y sustentabilidad.
+                Tú también reduce los costos de tu empresa y aumenta los beneficios de tu flota con un buen renovado, no te dejes llevar por los mitos y conoce todas las ventajas que ofrece el ronovado.
+              </p>
+            </div>
+          </article>
+        </section>
       </main>
     </>
   );

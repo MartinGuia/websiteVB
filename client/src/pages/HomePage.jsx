@@ -24,7 +24,7 @@ function HomePage({ delay }) {
               <Carousel />
             </section>
             <div className="flex justify-center">
-              <hr className="w-[90%] border-yellow-400 border-b-2 rounded-lg drop-shadow-md"/>
+              <hr className="w-[90%] border-yellow-400 border-b-2 rounded-lg drop-shadow-md" />
             </div>
           </motion.div>
 
@@ -35,10 +35,14 @@ function HomePage({ delay }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: delay, duration: 1 }}
             >
-              <article className="w-[65%] text-center max-[541px]:w-[100%]">
-                <h1 className="text-3xl font-bold mb-2 p-1 max-[430px]:text-xl">
-                  ¿Por qué renovar tus llantas?
-                </h1>
+              <article className="w-[65%] text-center max-[541px]:w-[100%] ">
+                <div className="flex flex-col items-center mb-2">
+                  <h1 className="text-3xl font-bold p-1 max-[430px]:text-xl">
+                    ¿Por qué renovar tus llantas?
+                  </h1>
+                  <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[90%]" />
+                </div>
+
                 <p className="w-[90%] max-[853px]:text-sm max-[541px]:text-justify max-[541px]:w-[100%] max-[434px]:text-xs">
                   El costo de renovar una llanta es menor que el de una llanta
                   nueva y se obtiene el mismo rendimiento por kilómetro. Además,

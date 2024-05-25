@@ -1,6 +1,6 @@
 import Menu from "../components/Menu.jsx";
 import * as images from "../img/index.js";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import CatalogueTodaPosicion from "../components/ui/CatalogueTodaPosicion.jsx";
 import CatalogueTraccion from "../components/ui/CatalogueTraccion.jsx";
 import CatalogueEjeLibre from "../components/ui/CatalogueEjeLibre.jsx";
@@ -8,27 +8,7 @@ import { motion } from "framer-motion";
 
 function CataloguePage({delay}) {
   const [vista, setVista] = useState("major");
-  const [visibleIndex, setVisibleIndex] = useState(null);
-  const infoRef = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleIndex(parseInt(entry.target.dataset.index));
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    infoRef.current.forEach((el) => {
-      observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+ 
 
   const Info = [
     {
@@ -90,10 +70,8 @@ function CataloguePage({delay}) {
           Aplicación
         </h1>
         <div className="w-[80%] bg-slate-100 mt-4 shadow-lg rounded-lg border-[1px]">
-          {Info.map((inf, index) => (
-            <article className="flex mt-5 mb-5" key={inf.id}
-            ref={(ref) => (infoRef.current[index] = ref)}
-              data-index={index}>
+          {Info.map((inf) => (
+            <article className="flex mt-5 mb-5" key={inf.id}>
               <img
                 src={inf.img}
                 alt=""
