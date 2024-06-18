@@ -62,3 +62,6 @@ export { default as embandado } from "./embandado.png";
 export { default as encamisado } from "./encamisado.png";
 export { default as vulcanizado } from "./vulcanizado.png";
 export { default as inspeccionFinal } from "./inspeccionFinal.png";
+export { default as llantaHomePage } from "./llantaHomePage.png";
+export { default as rueda } from "./rueda.png";
+export { default as flecha } from "./flecha.png";

@@ -1,85 +1,73 @@
-import Menu from "../components/Menu.jsx";
-import Carousel from "../components/ui/Carousel.jsx";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import * as images from "../img/index.js";
-import { motion } from "framer-motion";
+import "animate.css";
 
-function HomePage({ delay }) {
+function HomePage() {
+  // Define el arreglo de textos
+  const textos = [
+    {
+      mito: "Un renovado no se compara con una llanta nueva",
+      realidad:
+        "El renovado tiene un rendimiento igual o mejor que el de una llanta nueva y supera por mucho a las llantas económicas. Además, al renovar puedes alargar la vida útil de la llanta ya que puede someterse a este proceso más de una vez y su precio es más barato que el de una llanta nueva",
+    },
+    {
+      mito: "Los renovados son los trozos de la banda que se encuentran tirados en la carretera",
+      realidad:
+        "Esos trozos de banda con alambre que encuentras en la carretera no son parte de un renovado, pues contiene cuerdas de alambre que pertenecen al casco.",
+    },
+    // Agrega más objetos con mitos y realidades si es necesario
+  ];
+
+  // Define el estado para el índice actual
+  const [indice, setIndice] = useState(0);
+
+  // Actualiza el índice cada vez que se cargue la página
+  useEffect(() => {
+    const nuevoIndice = Math.floor(Math.random() * textos.length);
+    setIndice(nuevoIndice);
+  }, []);
+
   return (
-    <>
-      <header className="">
-        <Menu />
-      </header>
-      <main className="">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
-        >
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: delay, duration: 1 }}
-          >
-            <section className="flex justify-center py-3">
-              <Carousel />
-            </section>
-            <div className="flex justify-center">
-              <hr className="w-[90%] border-yellow-400 border-b-2 rounded-lg drop-shadow-md" />
-            </div>
-          </motion.div>
-
-          <section className="flex justify-center mt-10">
-            <motion.div
-              className="flex items-center p-2  w-[90%] rounded-md h-auto max-[541px]:flex-col max-[541px]:justify-center"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: delay, duration: 1 }}
+    <main className="flex bg-gradient-to-br from-slate-800 to-slate-900 h-screen max-[912px]:flex-col max-[912px]:justify-start">
+      <section className="w-[50%] flex flex-col justify-center items-center animate__animated animate__slideInLeft max-[912px]:w-[100%] max-[912px]:mt-10">
+        <article className="flex flex-col w-[50%]">
+          <div className="text-9xl font-bold flex max-[1024px]:text-8xl max-[540px]:text-6xl max-[376px]:text-5xl">
+            <h1 className="">Vi</h1>
+            <h1 className=" text-yellow-500">ta</h1>
+          </div>
+          <div className="flex ml-[42%] text-9xl font-bold max-[1024px]:text-8xl max-[540px]:text-6xl max-[376px]:text-5xl">
+            <h1 className="">Ba</h1>
+            <h1 className=" text-yellow-500">jío</h1>
+          </div>
+        </article>
+        <article className="mt-4 w-[50%] text-justify flex flex-col max-[540px]:w-[80%]">
+          <div className="">
+            <h1 className="text-2xl text-yellow-500 max-[1024px]:text-lg max-[912px]:text-2xl max-[376px]:text-xl">Mito</h1>
+            <p className="max-[1024px]:text-sm max-[912px]:text-lg max-[376px]:text-sm">{textos[indice].mito}</p> {/* Muestra el mito correspondiente al índice */}
+          </div>
+          <div className="mt-2">
+            <h1 className="text-2xl text-yellow-500 max-[1024px]:text-lg max-[912px]:text-2xl max-[376px]:text-xl">Realidad</h1>
+            <p className="max-[1025px]:text-sm max-[912px]:text-lg max-[376px]:text-sm">{textos[indice].realidad}</p> {/* Muestra la realidad correspondiente al índice */}
+          </div>
+        </article>
+      </section>
+      <section className="w-[50%] flex flex-col justify-center items-center animate__animated animate__slideInRight max-[853px]:w-[100%]">
+        <article className="animate-spin-slow w-[55%] max-[900px]:w-[40%] max-[540px]:w-[30%] max-[912px]:mt-4">
+          <img className="drop-shadow-2xl w-[100%]" src={images.rueda} alt="" />
+        </article>
+        <article className="mt-16 max-[540px]:mt-10">
+          <button>
+            <Link
+              to="/dashboard"
+              className="cursor-pointer bg-yellow-500 shadow-lg shadow-yellow-500/50 rounded-lg px-14 py-4"
             >
-              <article className="w-[65%] text-center max-[541px]:w-[100%] ">
-                <div className="flex flex-col items-center mb-2">
-                  <h1 className="text-3xl font-bold p-1 max-[430px]:text-xl">
-                    ¿Por qué renovar tus llantas?
-                  </h1>
-                  <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[90%]" />
-                </div>
-
-                <p className="w-[90%] max-[853px]:text-sm max-[541px]:text-justify max-[541px]:w-[100%] max-[434px]:text-xs">
-                  El costo de renovar una llanta es menor que el de una llanta
-                  nueva y se obtiene el mismo rendimiento por kilómetro. Además,
-                  el proceso de renovado Bandag ha comprobado ser tan eficaz que
-                  en México se renuevan con Bandag aproximadamente 350 mil
-                  llantas al año. Mantener tus llantas funcionando por más
-                  tiempo permitirá a tus transportes trabajando de manera
-                  productiva, obteniendo más ganancias por una fracción de su
-                  costo. El proceso de renovado de Bandag es eficiente y
-                  comprobado, y mantiene a tus camiones rodando.
-                </p>
-              </article>
-              <article className="w-[35%] flex justify-center max-[541px]:w-[100%]">
-                <img
-                  src={images.main1}
-                  alt="main1"
-                  className="w-[90%] mt-1 max-[430px]:w-[80%] max-[853px]:w-[100%] mb-2 rounded-md shadow-md"
-                />
-              </article>
-            </motion.div>
-          </section>
-          <section className="mt-10 flex justify-center">
-            <motion.div
-              className=""
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: delay, duration: 1 }}
-            >
-              <div>
-                <h1 className="text-3xl font-bold">Sobre nosotros</h1>
-                <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md" />
-              </div>
-            </motion.div>
-          </section>
-        </motion.div>
-      </main>
-    </>
+              Ver Catálogo
+            </Link>
+          </button>
+        </article>
+      </section>
+    </main>
   );
 }
 

@@ -13,7 +13,7 @@ function Menu() {
       id: 1,
       title: "Inicio",
       //   image: tickets,
-      to: "/",
+      to: "/dashboard",
     },
     {
       id: 2,
@@ -38,13 +38,15 @@ function Menu() {
   return (
     <>
       <div className="flex w-full justify-between h-32 bg-slate-50 drop-shadow-md max-[600px]:h-28 relative z-10">
-        <div className="w-[30%] flex items-center max-[913px]:w-[30%]">
+        
+          <Link to="/" className="w-[30%] flex items-center max-[913px]:w-[30%]">
           <img
             src={images.logoVB}
             alt="Logo VitaBajío"
             className="w-[35%] h-28 ml-6 max-[1025px]:w-[50%] max-[861px]:w-[80%] max-[541px]:w-[85%] max-[600px]:h-20 max-[346px]:ml-2 max-[346px]:w-[95%] max-[913px]:w-[68%]"
           />
-        </div>
+          </Link>
+        
         <div className="w-[50%] flex items-center justify-evenly max-[861px]:w-[65%] max-[913px]:w-[70%] max-[768px]:justify-end">
           {/* Icono del menú */}
           <HiOutlineMenuAlt3

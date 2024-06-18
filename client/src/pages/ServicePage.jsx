@@ -117,13 +117,13 @@ function ServicePage() {
           </div>
         </section>
         <section className="flex justify-center">
-          <article className="w-[90%] text-justify">
+          <article className="w-[90%]">
             <div className="mb-4">
               <h1 className="text-3xl font-bold mb-1">Renovar en lugar de comprar</h1>
               <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%]" />
             </div>
             <div>
-              <p>
+              <p className="text-justify">
                 Un buen renovado ayuda a los propietarios de negocios inteligentes a incrementar el rendimiento de sus llantas y reducir sus costos de operación.
                 Hoy en día la mayoría de las flotas de camiones, aerolíneas, empresas de construcción, agricultures e incluso autobuses escolares utilizan este proceso para eficientar sus costos sin sacrificar seguridad, calidad, desempeño, tecnología, kilometraje y sustentabilidad.
                 Tú también reduce los costos de tu empresa y aumenta los beneficios de tu flota con un buen renovado, no te dejes llevar por los mitos y conoce todas las ventajas que ofrece el ronovado.
