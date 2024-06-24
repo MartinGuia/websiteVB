@@ -6,373 +6,261 @@ function CatalogueTraccion() {
   const CatalogueTraccion = [
     {
       id: 1,
-      title: "B710 FUELTECH",
-      img1: [images.B710],
+      title: "M726 ELA",
+      img1: [images.M726ELA],
       img2: [images.traccion],
-      img3: [images.Regional],
       img4: [images.lDistancia],
       caract1:
-        "- Avanzada tecnología de compuestos que reducen la pérdida de energía por su baja resistencia al rodamiento, para obtener un consumo eficiente de combustible.",
+        "- La nueva generación de M726 ELA ofrece hasta un 12% menos de resistencia al rodamiento, proporciona un desempeño superior por su diseño de alta rigidez, desgaste lento y uniforme gracias a su control de movimiento de costillas y bloques en la rotación.",
       caract2:
-        "- Diseños de hombros contínuos y alta rigidez en los bloques que brindan un desgaste uniforme, promoviendo un mayor kilometraje.",
+        "- Estrías en bloques para promover la tracción en caminos mojados.",
       caract3:
-        "-  El B710 cumple la normativa SmartWay de la Agencia de Protección Ambiental (Environmental Protection Agency, EPA) y el cumplimiento de las disposiciones de la Junta de Recursos del Aire de California (California Air Resources Board, CARB).",
-      ancho1: "210",
-      ancho2: "220",
-      ancho3: "230",
-      ancho4: "240",
-      profundidad1: "19.8",
-      profundidad2: "19.8",
-      profundidad3: "19.8",
-      profundidad4: "19.8",
-    },
-    {
-      id: 2,
-      title: "B760 FUELTECH",
-      img1: [images.B760],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      img4: [images.lDistancia],
-      caract1:
-        "- Ancho de ranura optimizada que evita la retención de piedras y protege la carcasa de daños prematuros.",
-      caract2:
-        "- Puentes de amarre s que ayudan a minimizar el desgaste irregular punta-talón.",
-      caract3:
-        "-   Pequeñas ranuras en los bloques que promueven una excelente tracción en superficies secas y mojadas al mismo tiempo que ayudan a dar una mayor estabilidad.",
-      caract4:
-        "- El diseño B760 Fueltech cumple la normativa SmartWay de la Agencia de Protección Ambiental (Environmental Protection Agency, EPA) y el cumplimiento de las disposiciones de la Junta de Recursos del Aire de California (California Air Resources Board, CARB).",
-      ancho1: "210",
-      ancho2: "220",
-      ancho3: "230",
-      ancho4: "240",
-      profundidad1: "18.3",
-      profundidad2: "18.3",
-      profundidad3: "18.3",
-      profundidad4: "18.3",
-    },
-    {
-      id: 3,
-      title: "B835 FUELTECH",
-      img1: [images.B835],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      img4: [images.lDistancia],
-      caract1:
-        "- Amplias y profundas ranuras para una tracción sólida y una vida útil prolongada. ",
-      caract2:
-        "- Bloques divididos en la banda de rodamiento para controlar el desgaste irregular y contribuir a la poca generación de ruido.",
-      caract3:
-        "-  Expulsores de piedras que fortalecen la durabilidad del casco.",
-      caract4:
-        "- El diseño B835 cumple la normativa SmartWay de la Agencia de Protección Ambiental (Environmental Protection Agency, EPA) y el cumplimiento de las disposiciones de la Junta de Recursos del Aire de California (California Air Resources Board, CARB).",
-      ancho1: "390",
-      ancho2: "400",
-      profundidad1: "18.3",
-      profundidad2: "18.3",
-    },
-    {
-      id: 4,
-      title: "MEGATREK",
-      img1: [images.MEGATREK],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      img4: [images.lDistancia],
-      caract1:
-        "-  Compuesto patentado que contribuye a prolongar la vida útil de la banda de rodamiento. ",
-      caract2:
-        "- Hombros contínuos que contribuyen a una mayor duración y a combatir el desgaste irregular.",
-      caract3:
-        "- Diseño de taco dinámico que propicia una eficiente tracción en la operación.",
-      caract4:
-        "- Expulsores de piedras contínuos en el centro de la banda que fortalecen la durabilidad del casco renovado.",
-      ancho1: "220",
-      ancho2: "230",
-      ancho3: "240",
-      profundidad1: "20.6",
-      profundidad2: "20.6",
-      profundidad3: "20.6",
-    },
-    {
-      id: 5,
-      title: "B729Z",
-      img1: [images.B729Z],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      caract1:
-        "- Mayor número de estrías y bloques divididos que incrementan los puntos de contacto para una mayor tracción.",
-      caract2:
-        "- Diseño versátil para diversas condiciones de operación.",
-      caract3:
-        "- Cuatro ranuras circunferenciales ayudan a canalizar el agua lejos de la huella para lograr unan firme en condiciones húmedas.",
-      caract4:
-        "- El patrón especial en cada costilla mejora la tracción.",
-      ancho1: "240",
-      ancho2: "250",
-      ancho3: "260",
-      ancho4: "270",
-      profundidad1: "18.5",
-      profundidad2: "18.5",
-      profundidad3: "18.5",
-      profundidad4: "18.5",
-    },
-    {
-      id: 6,
-      title: "BDE2",
-      img1: [images.BDE2],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      ancho1: "230",
-      ancho2: "240",
-      ancho3: "250",
-      ancho4: "260",
-      ancho5: "270",
-      profundidad1: "22.0",
-      profundidad2: "22.0",
-      profundidad3: "22.0",
-      profundidad4: "22.0",
-      profundidad5: "22.0",
-    },
-    {
-      id: 7,
-      title: "BDL",
-      img1: [images.BDL],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      img4: [images.On_Off],
-      ancho1: "210",
-      ancho2: "220",
-      ancho3: "230",
-      ancho4: "240",
-      ancho5: "250",
-      profundidad1: "16.0",
-      profundidad2: "16.0",
-      profundidad3: "16.0",
-      profundidad4: "16.0",
-      profundidad5: "16.0",
-    },
-    {
-      id: 8,
-      title: "BDLT",
-      img1: [images.BDLT],
-      img2: [images.traccion],
-      img3: [images.Urbano],
-      ancho1: "140",
-      ancho2: "150",
-      ancho3: "160",
-      ancho4: "170",
-      ancho5: "180",
-      ancho6: "190",
-      ancho7: "200",
-      ancho8: "210",
-      profundidad1: "12.7",
-      profundidad2: "12.7",
-      profundidad3: "12.7",
-      profundidad4: "12.7",
-      profundidad5: "12.7",
-      profundidad6: "12.7",
-      profundidad7: "12.7",
-      profundidad8: "12.7",
-    },
-    {
-      id: 9,
-      title: "BDR-AS",
-      img1: [images.BDR_AS],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      ancho1: "180",
-      ancho2: "190",
-      ancho3: "200",
-      ancho4: "210",
-      ancho5: "220",
-      ancho6: "230",
-      profundidad1: "17.5",
-      profundidad2: "17.5",
-      profundidad3: "17.5",
-      profundidad4: "17.5",
-      profundidad5: "17.5",
-      profundidad6: "17.5",
-    },
-    {
-      id: 10,
-      title: "BDR-HG",
-      img1: [images.BDR_HG],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      ancho1: "210",
-      ancho2: "220",
-      ancho3: "230",
-      ancho4: "240",
-      ancho5: "250",
-      ancho6: "260",
-      profundidad1: "21.4",
-      profundidad2: "21.4",
-      profundidad3: "21.4",
-      profundidad4: "21.4",
-      profundidad5: "21.4",
-      profundidad6: "21.4",
-    },
-    {
-      id: 11,
-      title: "BDR-HT2",
-      img1: [images.BDR_HT2],
-      img2: [images.traccion],
-      img3: [images.Urbano],
-      ancho1: "230",
-      ancho2: "240",
-      ancho3: "250",
-      ancho4: "260",
-      ancho5: "270",
-      profundidad1: "22.0",
-      profundidad2: "22.0",
-      profundidad3: "22.0",
-      profundidad4: "22.0",
-      profundidad5: "22.0",
-    },
-    {
-      id: 12,
-      title: "DR4.3",
-      img1: [images.DR4],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      ancho1: "200",
-      ancho2: "210",
-      ancho3: "220",
-      ancho4: "230",
-      ancho5: "240",
-      profundidad1: "17.5",
-      profundidad2: "17.5",
-      profundidad3: "17.5",
-      profundidad4: "17.5",
-      profundidad5: "17.5",
-    },
-    {
-      id: 13,
-      title: "ECONO DRIVE",
-      img1: [images.ECONO],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      ancho1: "8",
-      ancho2: "8.5",
-      ancho3: "9",
-      ancho4: "9.5",
-      ancho5: "10.5",
-      profundidad1: "14.3",
-      profundidad2: "14.3",
-      profundidad3: "14.3",
-      profundidad4: "14.3",
-      profundidad5: "14.3",
-    },
-    {
-      id: 14,
-      title: "UDR",
-      img1: [images.UDR],
-      img2: [images.traccion],
-      img3: [images.Regional],
-      ancho1: "200",
-      ancho2: "210",
-      ancho3: "220",
-      ancho4: "230",
-      ancho5: "240",
-      ancho6: "250",
-      profundidad1: "20.6",
-      profundidad2: "20.6",
-      profundidad3: "20.6",
-      profundidad4: "20.6",
-      profundidad5: "20.6",
-      profundidad6: "20.6",
-    },
-    {
-      id: 15,
-      title: "BDM",
-      img1: [images.BDM],
-      img2: [images.traccion],
-      img3: [images.On_Off],
-      ancho1: "190",
-      ancho2: "200",
-      ancho3: "210",
-      ancho4: "220",
-      ancho5: "230",
-      ancho6: "240",
-      ancho7: "250",
-      ancho8: "260",
-      ancho9: "270",
-      ancho10: "280",
-      profundidad1: "20.6",
-      profundidad2: "20.6",
-      profundidad3: "20.6",
-      profundidad4: "20.6",
-      profundidad5: "20.6",
-      profundidad6: "23.8",
-      profundidad7: "25.4",
-      profundidad8: "25.4",
-      profundidad9: "25.4",
-      profundidad10: "25.4",
-    },
-    {
-      id: 16,
-      title: "BDM2",
-      img1: [images.BDM2],
-      img2: [images.traccion],
-      img3: [images.On_Off],
-      ancho1: "210",
-      ancho2: "220",
-      ancho3: "240",
-      ancho4: "250",
-      ancho5: "270",
+        "- Diseño de hombros continuos para combatir un desgaste irregular y la torsión de los bloques originando un desgaste más uniforme.",
+      medida1: "11R22.5",
+      medida2: "11R24.5",
+      medida3: "295/75R22.5",
+      medida4: "285/75R24.5",
+      ancho1: "285",
+      ancho2: "285",
+      ancho3: "287",
+      ancho4: "287",
       profundidad1: "25.4",
       profundidad2: "25.4",
       profundidad3: "25.4",
       profundidad4: "25.4",
-      profundidad5: "25.4",
+      logo: [images.bridgestone],
+      logo2: [images.B]
     },
     {
-      id: 17,
-      title: "BDY1S",
-      img1: [images.BDY1S],
+      id: 2,
+      title: "M726",
+      img1: [images.M726],
       img2: [images.traccion],
-      img3: [images.On_Off],
-      ancho1: "240",
-      ancho2: "250",
-      profundidad1: "23.8",
-      profundidad2: "23.8",
+      img4: [images.lDistancia],
+      caract1:
+        "- Diseñada con banda de rodadura extra profunda para proporcionar el mejor kilometraje y tracción.",
+      caract2:
+        "- Costillas d hpmbro continuas para distribuir el peso y el torque reduciendo el desgaste irregular.",
+      caract3:
+        "- Casco robusto para mejorar renovabilidad y con plataformas centrales para evitar daños por piedras enfocado.",
+      medida1: "255/70R22.5",
+      ancho1: "262",
+      profundidad1: "20.6",
+      logo: [images.bridgestone],
+      logo2: [images.B]
     },
     {
-      id: 18,
-      title: "CROSS BAR",
-      img1: [images.CROSS],
+      id: 3,
+      title: "M713",
+      img1: [images.M713],
       img2: [images.traccion],
-      img3: [images.On_Off],
-      ancho1: "2",
-      ancho2: "3",
-      ancho3: "4",
-      ancho4: "5",
-      ancho5: "6",
-      ancho6: "7",
-      ancho7: "8",
-      ancho8: "9",
-      profundidad1: "11.9",
-      profundidad2: "11.9",
-      profundidad3: "15.1",
-      profundidad4: "15.1",
-      profundidad5: "15.1",
-      profundidad6: "15.1",
-      profundidad7: "15.1",
-      profundidad8: "15.1",
+      img4: [images.lDistancia],
+      caract1:
+        "- Está diseñada con un costado innovador INTELLISHAPE que ayuda a reducir el peso total de la llanta sin reducir durabilidad",
+      caract2:
+        "- Combinan baja resistencia al rodamiento y un casco de ahorro de energía para el uso eficiente del combustible.",
+      caract3:
+        "- Hombro continuo y diseño de banda de rodadura rígido combaten el desgaste irregular y reducen la resistencia al rodamiento.",
+      caract4:
+        "- Verificada con la regulación smartway de eficiencia de uso de combustible.",
+      medida1: "295/75R22.5",
+      ancho1: "287",
+      profundidad1: "20.6",
+      logo: [images.bridgestone],
+      logo2: [images.B]
     },
     {
-      id: 19,
-      title: "W H LUG",
-      img1: [images.WHLUG],
+      id: 4,
+      title: "M749",
+      img1: [images.M749],
       img2: [images.traccion],
-      img3: [images.On_Off],
-      ancho1: "9",
-      ancho2: "9.5",
-      ancho3: "10.5",
-      ancho4: "12",
-      profundidad1: "20.5",
-      profundidad2: "20.5",
-      profundidad3: "22.5",
-      profundidad4: "25.6",
+      img4: [images.lDistancia],
+      caract1:
+        "- Está diseñada con la tecnología ptentada WaveBelt para mejorar la durabilidad del casco y minimizar el estrés en los cinturones, manteniendo una pisada estable.",
+      caract2:
+        "- Tracción mejorada en superficies mojadas gracias a sus múltiples estrías onduladas.",
+      caract3:
+        "- Posee puentes de amarre en la banda para controlar el movimiento de los bloques disminuyendo el desgaste irregular.",
+      caract4:
+        "- Deflectores flexibles en ranuras que amortiguan el ruido producido por el aire al rodar la llanta.",
+      medida1: "295/60R22.5",
+      ancho1: "292",
+      profundidad1: "18.3",
+      logo: [images.bridgestone],
+      logo2: [images.B]
+    },
+    {
+      id: 5,
+      title: "M729",
+      img1: [images.M729],
+      img2: [images.traccion],
+      img3: [images.Regional],
+      caract1:
+        "- Diseño agresivo para mejor tracción en toda condición climática.",
+      caract2:
+        "- Casco optimizado para una mayor durabilidad y costillas protectoras laterales para reducir cortes e impactos.",
+      caract3:
+        "- Diseñado con compuesto especial para incrementar su vida original y propiciar una mayor renovabilidas.",
+        medida1: "225/70R19.5",
+        medida2: "285/70R19.5",
+        medida3: "11R24.5",
+        ancho1: "216",
+        ancho2: "283",
+        ancho3: "285",
+        profundidad1: "15.1",
+        profundidad2: "15.9",
+        profundidad3: "23.8",
+        logo: [images.bridgestone],
+        logo2: [images.B]
+    },
+    {
+      id: 6,
+      title: "M736",
+      img1: [images.M736],
+      img2: [images.traccion],
+      img3: [images.Regional],
+      caract1:
+        "- Nuevo compuesto que brinda mayor kilometraje.",
+      caract2:
+        "- Diseño de bloques convexos que reducen el desgaste irregular.",
+      caract3:
+        "- Mayor número de bloques lo cual brinda mayor adherencia y tracción, proporcionando alto desempeño en terrenos mojados.",
+      caract4:
+        "- Banda de rodadura con construcción CAPA-BASE lo cual genera menor calor y mayor durabilidad.",
+        medida1: "275/80R22.5",
+        medida2: "295/80R22.5",
+        ancho1: "279",
+        ancho2: "298",
+        profundidad1: "22",
+        profundidad2: "23.6",
+        logo: [images.bridgestone],
+        logo2: [images.B]
+    },
+    {
+      id: 7,
+      title: "L317",
+      img1: [images.L317],
+      img2: [images.traccion],
+      img3: [images.off_road],
+      caract1:
+        "- Diseñada con robustas barras para proporcionar un excelente agarre, compuesto especial en la banda de rodadura para mayor resistencia a cortes, desgarres irregulares.",
+      caract2:
+        "- Diseño profundo para una mayor vida original.",
+        medida1: "11R22.5",
+        medida2: "13R22.5",
+        medida3: "12.00R24",
+        ancho1: "274",
+        ancho2: "320",
+        ancho3: "320",
+        profundidad1: "24.6",
+        profundidad2: "31.0",
+        profundidad3: "31.0",
+        logo: [images.bridgestone],
+        logo2: [images.B]
+    },
+    {
+      id: 8,
+      title: "L320",
+      img1: [images.L320],
+      img2: [images.traccion],
+      img3: [images.off_road],
+      caract1:
+        "- Diseñada con robustas barras para proporcionar un excelente agarre, compuesto especial en la banda de rodadura para mayor resistencia a cortes, desgarres irregulares.",
+      caract2:
+        "- Diseño profundo para una mayor vida original.",
+        medida1: "11R22.5",
+        medida2: "11R24.5",
+        ancho1: "274",
+        ancho2: "274",
+        profundidad1: "24.6",
+        profundidad2: "25.6",
+        logo: [images.bridgestone],
+        logo2: [images.B]
+    },
+    {
+      id: 9,
+      title: "FD694",
+      img1: [images.FD694],
+      img2: [images.traccion],
+      img3: [images.lDistancia],
+      caract1:
+        "- Banda de rodamiento profunda y rígida: Ofrece larga durabilidad y desgaste uniforme, controlando el movimiento de las costillas y bloques durante la operación.",
+      caract2:
+        "- Diseño solido de hombro: Distribuye el peso y los esfuerzos por torque, para combatir el desgaste irregular y la torsión de los bloques, logrando un desgaste uniforme.",
+      caract3:
+        "- Ranuras anchas en centro y hombro: Evacúan el agua eficazmente para mejorar la tracción y ofrecer un agarre estable en superficies mojadas.",
+      caract4:
+        "- Expulsores de piedra: Reducen el atrapamiento de piedras en las ranuras disminuyendo los daños y oxidación en los cinturones y carcasa, mejorando la renovabilidad.",
+        medida1: "11R22.5",
+        medida2: "11R24.5",
+        medida3: "295/75R22.5",
+        medida4: "285/75R24.5",
+        ancho1: "287",
+        ancho2: "287",
+        ancho3: "290",
+        ancho4: "287",
+        profundidad1: "23.8",
+        profundidad2: "23.8",
+        profundidad3: "23.8",
+        profundidad4: "23.8",
+        logo: [images.Firestone],
+        logo2: [images.F]
+    },
+    {
+      id: 10,
+      title: "FD663",
+      img1: [images.FD663],
+      img2: [images.traccion],
+      img3: [images.Regional],
+      caract1:
+        "- Sus bloques profundos proporcionan un agarre excepcional.",
+      caract2:
+        "- Los canales laterales por la estructura de hombro abierto proporcionan las vías para una precisa evacuación de agua, lodo o escombros; asegurando el máximo contacto con la carretera.",
+      caract3:
+        "- Los bloques adyacentes unidos por la tecnología TIE-BARS minimizan el desgaste irregular para una larga vida útil.",
+      caract4:
+        "- Cuatro cinturones de seguridad de acero para mayor durabilidad y renovabilidad.",
+        medida1: "11R22.5",
+        medida2: "11R24.5",
+        medida3: "295/75R22.5",
+        medida4: "285/75R24.5",
+        ancho1: "274",
+        ancho2: "272",
+        ancho3: "282",
+        ancho4: "269",
+        profundidad1: "20.6",
+        profundidad2: "20.6",
+        profundidad3: "20.6",
+        profundidad4: "20.6",
+        logo: [images.Firestone],
+        logo2: [images.F]
+    },
+    {
+      id: 11,
+      title: "T831",
+      img1: [images.T831],
+      img2: [images.traccion],
+      img3: [images.off_road],
+      caract1:
+        "- Diseño agresivo de barras para una tracción efectiva. Banda de rodamiento extra profunda para mayor rendimiento.",
+      caract2:
+        "- Compuestos desarrollados para resistir desgarres, arrancamientos y penetraciones.",
+      caract3:
+        "- Contorno especial en el cuerpo que ayuda a reducir el estrés de la operación, proporcionando durabilidad y renovabilidad.",
+        medida1: "11R22.5",
+        medida2: "11R24.5",
+        medida3: "295/75R22.5",
+        medida4: "285/75R24.5",
+        ancho1: "274",
+        ancho2: "272",
+        ancho3: "282",
+        ancho4: "269",
+        profundidad1: "20.6",
+        profundidad2: "20.6",
+        profundidad3: "20.6",
+        profundidad4: "20.6",
+        logo: [images.Firestone],
+        logo2: [images.F]
     },
   ];
 
@@ -391,17 +279,22 @@ function CatalogueTraccion() {
 
   const containerRef = useRef(null);
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const cardsInView = entries.filter((entry) => entry.isIntersecting).map((entry) => entry.target);
-      setVisibleCards(cardsInView);
-    }, { threshold: 0.5 }); // Puedes ajustar el umbral según tus necesidades
-  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const cardsInView = entries
+          .filter((entry) => entry.isIntersecting)
+          .map((entry) => entry.target);
+        setVisibleCards(cardsInView);
+      },
+      { threshold: 0.5 }
+    ); // Puedes ajustar el umbral según tus necesidades
+
     if (containerRef.current) {
       containerRef.current.childNodes.forEach((card) => {
         observer.observe(card);
       });
     }
-  
+
     return () => {
       if (containerRef.current) {
         containerRef.current.childNodes.forEach((card) => {
@@ -413,18 +306,24 @@ function CatalogueTraccion() {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-3" ref={containerRef}>
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-3"
+        ref={containerRef}
+      >
         {CatalogueTraccion.map((card) => (
           <button
             key={card.id}
             onClick={() => handleOpenModal(card)}
-            className={`flex flex-col border-[1px] rounded-xl items-center w-full shadow-xl hover:-translate-y-3 duration-700  bg-slate-100 ${visibleCards.includes(card) ? " opacity-0" : "animate-fadeIn"}`}
+            className={`flex flex-col border-[1px] rounded-xl items-center w-full shadow-xl hover:-translate-y-3 duration-700  bg-slate-100 ${
+              visibleCards.includes(card) ? " opacity-0" : "animate-fadeIn"
+            }`}
           >
-            <h1 className="bg-blue-950 w-full rounded-t-lg flex justify-center text-white font-semibold p-2">
-              {card.title}
+             <h1 className="bg-yellow-500 w-full rounded-t-lg flex text-white font-semibold p-2 shadow-md">
+              <div className="w-[90%]">{card.title}</div>
+              <div className="w-[10%]"><img className="size-6" src={card.logo2} alt="" /></div>
             </h1>
             <div className="mt-1">
-              <img src={card.img1} alt="" />
+              <img className="size-28" src={card.img1} alt="" />
             </div>
             <div className="flex">
               <img src={card.img2} alt="" />

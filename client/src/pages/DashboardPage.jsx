@@ -35,7 +35,7 @@ function DashboardPage({delay}) {
               transition={{ delay: delay, duration: 1 }}
             >
               <article className="w-[65%] items-center text-center max-[541px]:w-[100%] flex flex-col">
-                <div className=" mb-2 w-[40%]">
+                <div className=" mb-2 w-[40%] max-[1280px]:w-[80%] max-[920px]:w-[100%]">
                   <h1 className="text-3xl font-bold p-1 max-[430px]:text-xl">
                     ¿Por qué renovar tus llantas?
                     <hr className="border-b-2 mt-2 border-yellow-400 rounded-md drop-shadow-md w-auto" />
@@ -64,19 +64,19 @@ function DashboardPage({delay}) {
               </article>
             </motion.div>
           </section>
-          <section className="mt-10 flex justify-center">
+          {/* <section className="mt-10 flex justify-center">
             <motion.div
               className=""
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: delay, duration: 1 }}
             >
-              {/* <div>
+              <div>
                 <h1 className="text-3xl font-bold">Sobre nosotros</h1>
                 <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md" />
-              </div> */}
+              </div>
             </motion.div>
-          </section>
+          </section> */}
         </motion.div>
       </main>
     </>
