@@ -13,7 +13,7 @@ function Menu() {
       id: 1,
       title: "Inicio",
       //   image: tickets,
-      to: "/dashboard",
+      to: "/",
     },
     {
       id: 2,
