@@ -6,16 +6,16 @@ import HomePage from "./HomePage.jsx";
 import ButtonFloating from "../components/ui/ButtonFloating.jsx";
 
 function DashboardPage({ delay }) {
-    // Configura el número de WhatsApp y el mensaje predefinido
-    const phoneNumber = '524641407721'; // Reemplaza con tu número de WhatsApp
-    const message = '¡Hola! Me gustaría solicitar una cotización.';
+  // Configura el número de WhatsApp y el mensaje predefinido
+  const phoneNumber = "524641407721"; // Reemplaza con tu número de WhatsApp
+  const message = "¡Hola! Me gustaría solicitar una cotización.";
   return (
     <>
       <header className="">
         <Menu />
       </header>
       <main className="">
-        <HomePage/>
+        <HomePage />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -104,7 +104,9 @@ function DashboardPage({ delay }) {
               </article>
             </motion.div>
           </section>
-          <section><ButtonFloating phoneNumber={phoneNumber} message={message}/></section>
+          <section>
+            <ButtonFloating phoneNumber={phoneNumber} message={message} />
+          </section>
         </motion.div>
       </main>
     </>

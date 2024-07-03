@@ -2,8 +2,12 @@ import React from "react";
 import Menu from "../components/Menu";
 import Card from "../components/ui/Card";
 import * as images from "../img/index.js";
+import ButtonFloating from "../components/ui/ButtonFloating.jsx";
 
 function CataloguePage() {
+  // Configura el número de WhatsApp y el mensaje predefinido
+  const phoneNumber = "524641407721"; // Reemplaza con tu número de WhatsApp
+  const message = "¡Hola! Me gustaría solicitar una cotización.";
   const Info = [
     {
       id: 1,
@@ -76,36 +80,47 @@ function CataloguePage() {
         <section className="mt-10">
           <div className="flex justify-center items-center">
             <div className="grid grid-cols-2 gap-8 max-w-5xl">
-              <Card to={`/catalogueNew`} imagen={images.FD663} titulo="Llanta Nueva" />
-              <Card to={`/catalogueRenovated`} imagen={images.bandaRenovada} titulo="Banda Renovada" />
+              <Card
+                to={`/catalogueNew`}
+                imagen={images.FD663}
+                titulo="Llanta Nueva"
+              />
+              <Card
+                to={`/catalogueRenovated`}
+                imagen={images.bandaRenovada}
+                titulo="Banda Renovada"
+              />
             </div>
           </div>
         </section>
         <section>
-           <div className="flex flex-col items-center mt-4">
-          <h1 className="flex justify-center text-3xl font-bold mt-4">
-            Aplicación
-          </h1>
-          <div className="w-[80%] bg-slate-100 mt-4 shadow-lg rounded-lg mb-2">
-            {Info.map((inf) => (
-              <article className="flex mt-5 mb-5" key={inf.id}>
-                <img
-                  src={inf.img}
-                  alt=""
-                  className="w-[3%] h-[2%] max-[853px]:w-[10%]"
-                />
-                <span className="ml-4">
-                  <h1 className="font-bold text-blue-800 max-[540px]:text-sm">
-                    {inf.title}
-                  </h1>
-                  <p className="text-sm text-blue-500 font-semibold max-[540px]:text-xs">
-                    {inf.description}
-                  </p>
-                </span>
-              </article>
-            ))}
+          <div className="flex flex-col items-center mt-4">
+            <h1 className="flex justify-center text-3xl font-bold mt-4">
+              Aplicación
+            </h1>
+            <div className="w-[80%] bg-slate-100 mt-4 shadow-lg rounded-lg mb-2">
+              {Info.map((inf) => (
+                <article className="flex mt-5 mb-5" key={inf.id}>
+                  <img
+                    src={inf.img}
+                    alt=""
+                    className="w-[3%] h-[2%] max-[853px]:w-[10%]"
+                  />
+                  <span className="ml-4">
+                    <h1 className="font-bold text-blue-800 max-[540px]:text-sm">
+                      {inf.title}
+                    </h1>
+                    <p className="text-sm text-blue-500 font-semibold max-[540px]:text-xs">
+                      {inf.description}
+                    </p>
+                  </span>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
+        <section>
+          <ButtonFloating phoneNumber={phoneNumber} message={message} />
         </section>
       </main>
     </>

@@ -2,9 +2,13 @@ import Menu from "../components/Menu.jsx";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import * as images from "../img/index.js";
+import ButtonFloating from "../components/ui/ButtonFloating.jsx";
 
 function ServicePage() {
   const [currentStep, setCurrentStep] = useState(1);
+    // Configura el número de WhatsApp y el mensaje predefinido
+    const phoneNumber = "524641407721"; // Reemplaza con tu número de WhatsApp
+    const message = "¡Hola! Me gustaría solicitar una cotización.";
 
   const steps = [
     {
@@ -139,6 +143,9 @@ function ServicePage() {
               </p>
             </div>
           </article>
+        </section>
+        <section>
+          <ButtonFloating phoneNumber={phoneNumber} message={message} />
         </section>
       </main>
     </>
