@@ -57,7 +57,7 @@ const Modal = ({ item, onClose }) => {
             Cerrar
           </button>
           <img
-            className="w-[20%] h-10 max-[1024px]:w-[40%] max-[540px]:w-[56%]"
+            className="w-auto h-10 max-[1024px]:w-[40%] max-[540px]:w-[56%]"
             src={item.logo}
             alt=""
           />
