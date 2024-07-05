@@ -1,7 +1,6 @@
-import React from "react";
 import * as images from "../../img/index.js";
 
-function ButtonFloating({ phoneNumber, message }) {
+function ButtonWhatsapp({ phoneNumber, message }) {
   const openWhatsApp = () => {
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
@@ -11,16 +10,16 @@ function ButtonFloating({ phoneNumber, message }) {
   return (
     <button
       onClick={openWhatsApp}
-      className="fixed bottom-7 right-10 flex items-center justify-center max-[430px]:bottom-10 max-[430px]:right-8"
+      className="rounded-full shadow-md  bg-green-500 hover:bg-green-600 flex items-center justify-center py-2 px-6"
     >
       <img
         src={images.whatsapp} // Reemplaza con la ruta a tu imagen de WhatsApp
         alt="WhatsApp Icon"
-        className="w-19 h-10 mr-2"
+        className="w-6 h-6 mr-2"
       />
-      {/* <span className="font-semibold">WhatsApp</span> */}
+      <span className="text-white font-semibold">WhatsApp</span>
     </button>
   );
 }
 
-export default ButtonFloating;
+export default ButtonWhatsapp;

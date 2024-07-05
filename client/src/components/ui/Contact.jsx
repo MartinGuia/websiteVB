@@ -1,6 +1,11 @@
 import * as images from "../../img/index.js";
+import ButtonWhatsapp from "../../components/ui/ButtonWhatsapp.jsx";
+import ButtonFacebook from "../../components/ui/ButtonFacebook.jsx";
 
 function Contact() {
+  // Configura el número de WhatsApp y el mensaje predefinido
+  const phoneNumber = "524641363889"; // Reemplaza con tu número de WhatsApp
+  const message = "¡Hola! Me gustaría solicitar una cotización.";
   return (
     <>
       <main className="flex justify-center text-black">
@@ -9,7 +14,9 @@ function Contact() {
             <section className="w-[50%] flex flex-col max-[768px]:w-[100%] max-[541px]:w-[100%]">
               <article>
                 <div className="flex flex-col items-center">
-                  <h1 className="text-4xl font-bold max-[540px]:text-2xl">Llamanos</h1>
+                  <h1 className="text-4xl font-bold max-[540px]:text-2xl">
+                    Llamanos
+                  </h1>
                   <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%]" />
                   <div className="flex mt-8 max-[540px]:mt-4">
                     <img className="size-8 mr-4" src={images.phone} alt="" />
@@ -19,11 +26,36 @@ function Contact() {
               </article>
               <article className="mt-8">
                 <div className="flex flex-col items-center">
-                  <h1 className="text-4xl font-bold max-[540px]:text-2xl">Contacto</h1>
+                  <h1 className="text-4xl font-bold max-[540px]:text-2xl">
+                    Contacto
+                  </h1>
                   <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%]" />
                   <div className="flex mt-8 max-[540px]:mt-4">
                     <img className="size-8 mr-4" src={images.contact} alt="" />
-                    <p className="text-2xl max-[540px]:text-xl">abarea@vitabajio.com</p>
+                    <p className="text-2xl max-[540px]:text-xl">
+                      abarea@vitabajio.com
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article className="mt-8">
+                <div className="flex flex-col items-center">
+                  <h1 className="text-4xl font-bold max-[540px]:text-2xl">
+                    Redes sociales
+                  </h1>
+                  <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%]" />
+                  <div className="flex mt-8 max-[540px]:mt-4 w-[50%] max-[1024px]:w-[100%]">
+                    <section className="flex justify-around w-[100%]">
+                      <div >
+                        <ButtonWhatsapp
+                          phoneNumber={phoneNumber}
+                          message={message}
+                        />
+                      </div>
+                      <div>
+                        <ButtonFacebook />
+                      </div>
+                    </section>
                   </div>
                 </div>
               </article>
@@ -41,8 +73,16 @@ function Contact() {
           </div>
           <section className="w-[100%] mt-10 max-[540px]:mt-4">
             <article className="flex justify-evenly">
-              <img className="w-[10%] h-[10%] max-[768px]:w-[20%] max-[768px]:h-[20%] max-[540px]:w-[30%]" src={images.logoVB} alt="" />
-              <img className="w-[10%] h-[10%] max-[768px]:w-[20%] max-[768px]:h-[20%] max-[540px]:w-[30%]" src={images.bandag} alt="" />
+              <img
+                className="w-[10%] h-[10%] max-[768px]:w-[20%] max-[768px]:h-[20%] max-[540px]:w-[30%]"
+                src={images.logoVB}
+                alt=""
+              />
+              <img
+                className="w-[10%] h-[10%] max-[768px]:w-[20%] max-[768px]:h-[20%] max-[540px]:w-[30%]"
+                src={images.bandag}
+                alt=""
+              />
             </article>
           </section>
         </div>

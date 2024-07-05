@@ -3,12 +3,8 @@ import Carousel from "../components/ui/Carousel.jsx";
 import * as images from "../img/index.js";
 import { motion } from "framer-motion";
 import HomePage from "./HomePage.jsx";
-import ButtonFloating from "../components/ui/ButtonFloating.jsx";
 
 function DashboardPage({ delay }) {
-  // Configura el número de WhatsApp y el mensaje predefinido
-  const phoneNumber = "524641407721"; // Reemplaza con tu número de WhatsApp
-  const message = "¡Hola! Me gustaría solicitar una cotización.";
   return (
     <>
       <header className="">
@@ -77,7 +73,7 @@ function DashboardPage({ delay }) {
             >
               <article className="text-center flex flex-col items-center">
                 <div className="w-[60%]">
-                  <h1 className="text-3xl font-bold text-black">
+                  <h1 className="text-3xl font-bold text-black max-[600px]:text-2xl">
                     <span className="text-yellow-400">Alta calidad </span>en
                     marcas premium
                   </h1>
@@ -87,7 +83,7 @@ function DashboardPage({ delay }) {
                   <p className="text-black text-center">
                     En nuestra empresa llantera nos enorgullecemos de ofrecer
                     únicamente llantas premium de la más alta calidad, al igual
-                    que las reconocidas marcas Firestone y Bridgestone. Nuestro
+                    que las reconocidas marcas Bridgestone y Firestone. Nuestro
                     compromiso es asegurar que cada llanta que vendemos cumpla
                     con los estándares más exigentes de durabilidad, seguridad y
                     rendimiento. Ya sea que necesites mejorar el agarre en
@@ -103,9 +99,6 @@ function DashboardPage({ delay }) {
                 <img src={images.firestone1} alt="" />
               </article>
             </motion.div>
-          </section>
-          <section>
-            <ButtonFloating phoneNumber={phoneNumber} message={message} />
           </section>
         </motion.div>
       </main>

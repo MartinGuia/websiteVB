@@ -2,12 +2,8 @@ import React from "react";
 import Menu from "../components/Menu";
 import Card from "../components/ui/Card";
 import * as images from "../img/index.js";
-import ButtonFloating from "../components/ui/ButtonFloating.jsx";
 
 function CataloguePage() {
-  // Configura el número de WhatsApp y el mensaje predefinido
-  const phoneNumber = "524641407721"; // Reemplaza con tu número de WhatsApp
-  const message = "¡Hola! Me gustaría solicitar una cotización.";
   const Info = [
     {
       id: 1,
@@ -78,8 +74,8 @@ function CataloguePage() {
           </article>
         </section>
         <section className="mt-10">
-          <div className="flex justify-center items-center">
-            <div className="grid grid-cols-2 gap-8 max-w-5xl">
+          <div className="flex justify-around ">
+            <div className="grid grid-cols-2 gap-8 max-w-5xl mx-2">
               <Card
                 to={`/catalogueNew`}
                 imagen={images.FD663}
@@ -118,9 +114,6 @@ function CataloguePage() {
               ))}
             </div>
           </div>
-        </section>
-        <section>
-          <ButtonFloating phoneNumber={phoneNumber} message={message} />
         </section>
       </main>
     </>

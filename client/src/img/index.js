@@ -105,3 +105,4 @@ export { default as TR41 } from "./TR41.png";
 export { default as T4100 } from "./T4100.png";
 export { default as BTL3 } from "./BTL3.png";
 export { default as whatsapp } from "./whatsapp.png";
+export { default as facebook } from "./facebook.png";

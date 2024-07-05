@@ -25,10 +25,11 @@ function QuotationPage() {
   };
   return (
     <>
-      <header>
+    <div className="bg-gradient-to-br from-slate-800 to-slate-900 ">
+    <header>
         <Menu />
       </header>
-      <main className="bg-gradient-to-br from-slate-800 to-slate-900 h-dvh flex items-center flex-col">
+      <main className=" flex items-center flex-col h-dvh">
           <h1 className="text-3xl text-white mb-3 font-bold mt-10">Cotización de llantas</h1>
           <div className="relative bottom-2 right-[40%]">
               <Link to="/">
@@ -37,9 +38,8 @@ function QuotationPage() {
                 </button>
               </Link>
             </div>
-          <section className="bg-primary w-[50%] h-auto p-4 rounded-2xl shadow-lg shadow-slate-100/30 max-[912px]:w-[50%] max-[430px]:w-[70%] top-24 relative">
+          <section className="bg-primary w-[50%] p-4 rounded-2xl shadow-lg shadow-slate-100/30 max-[912px]:w-[50%] max-[430px]:w-[70%]">
             <form ref={form} onSubmit={sendEmail}>
-              
               <article className="flex flex-col items-center mb-6 mt-2">
                 <div className="mb-3">
                   <label
@@ -114,6 +114,8 @@ function QuotationPage() {
             </form>
           </section>
         </main>
+    </div>
+      
     </>
   );
 }
