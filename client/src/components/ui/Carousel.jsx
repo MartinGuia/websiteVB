@@ -25,7 +25,7 @@ function Carousel({delay}) {
     >
       <Slider {...settings} className="">
         <div className="relative rounded-md">
-          <img src={images.slider1} alt="Imagen 1" />
+          <img src={images.slider1} alt="Inspección de llantas" />
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-30 text-white">
             <span className="font-medium text-2xl text-center max-[575px]:text-xs max-[575px]:font-normal">
             "Rodando hacia el futuro: <br />
@@ -34,7 +34,7 @@ function Carousel({delay}) {
           </div>
         </div>
         <div className="relative">
-          <img src={images.slider2} alt="Imagen 2"/>
+          <img src={images.slider2} alt="Banda de llanta"/>
           <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-30 text-white">
             <span className="font-medium text-2xl text-center max-[575px]:text-xs max-[575px]:font-normal">
               Desde hace 10 años ofrecemos nuestro servicio de venta de llanta <br className="max-[345px]:hidden"/>

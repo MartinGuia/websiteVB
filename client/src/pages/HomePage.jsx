@@ -29,17 +29,19 @@ function HomePage() {
   }, []);
 
   return (
-    <main >
+    <main>
       <div className="flex bg-gradient-to-br from-slate-800 to-slate-900 h-screen max-[912px]:flex-col max-[912px]:justify-start">
         <section className="w-[50%] flex flex-col justify-center items-center animate__animated animate__slideInUp max-[912px]:w-[100%] max-[912px]:mt-10">
           <article className="flex flex-col w-[50%]">
             <div className="text-9xl font-bold flex max-[1368px]:text-8xl max-[540px]:text-6xl max-[376px]:text-5xl">
-              <h1 className="">Vi</h1>
-              <h1 className=" text-yellow-500">ta</h1>
+              <h1 className="">
+                Vi<span className=" text-yellow-500">ta</span>
+              </h1>
             </div>
             <div className="flex ml-[42%] text-9xl font-bold max-[1368px]:text-8xl max-[540px]:text-6xl max-[376px]:text-5xl">
-              <h1 className="">Ba</h1>
-              <h1 className=" text-yellow-500">jío</h1>
+              <h1 className="">
+                Ba<span className=" text-yellow-500">jío</span>
+              </h1>
             </div>
           </article>
           <article className="mt-4 w-[50%] text-justify flex flex-col max-[540px]:w-[80%]">
@@ -49,7 +51,7 @@ function HomePage() {
               </h1>
               <p className="max-[1024px]:text-sm max-[912px]:text-lg max-[376px]:text-sm">
                 {textos[indice].mito}
-              </p>{" "}
+              </p>
               {/* Muestra el mito correspondiente al índice */}
             </div>
             <div className="mt-2">
@@ -58,7 +60,7 @@ function HomePage() {
               </h1>
               <p className="max-[1025px]:text-sm max-[912px]:text-lg max-[376px]:text-sm">
                 {textos[indice].realidad}
-              </p>{" "}
+              </p>
               {/* Muestra la realidad correspondiente al índice */}
             </div>
           </article>

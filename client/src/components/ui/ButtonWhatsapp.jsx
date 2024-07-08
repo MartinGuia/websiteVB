@@ -14,7 +14,7 @@ function ButtonWhatsapp({ phoneNumber, message }) {
     >
       <img
         src={images.whatsapp} // Reemplaza con la ruta a tu imagen de WhatsApp
-        alt="WhatsApp Icon"
+        alt="WhatsApp"
         className="w-6 h-6 mr-2"
       />
       <span className="text-white font-semibold">WhatsApp</span>

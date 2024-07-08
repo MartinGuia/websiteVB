@@ -9,7 +9,7 @@ function CatalogueEjeLibre() {
       title: "R123",
       img1: [images.R123],
       img2: [images.ejeLibre],
-      img4: [images.lDistancia],
+      img3: [images.lDistancia],
       caract1:
         "- Está diseñada para aplicaciones tanto de larga distancia como de servicio regional. Diseñada con un costado innovador INTLLISHAPE que ayuda a reducir el peso total de la llanta sin reducir durabilidad.",
       caract2:
@@ -31,7 +31,7 @@ function CatalogueEjeLibre() {
       profundidad3: "8.7",
       profundidad4: "8.7",
       logo: [images.bridgestone],
-      logo2: [images.B]
+      logo2: [images.B],
     },
     {
       id: 2,
@@ -45,20 +45,20 @@ function CatalogueEjeLibre() {
         "- Ofrece reducción en la resistencia al rodamiento mediante las costillas y bloques durante la rotación.",
       caract3:
         "- Certificada por la regulación smartway de eficiencia del uso de combustuble.",
-        medida1: "11R22.5",
-        medida2: "11R24.5",
-        medida3: "295/75R22.5",
-        medida4: "285/75R24.5",
-        ancho1: "287",
-        ancho2: "290",
-        ancho3: "292",
-        ancho4: "287",
-        profundidad1: "9",
-        profundidad2: "9",
-        profundidad3: "9",
-        profundidad4: "9",
-        logo: [images.Firestone],
-        logo2: [images.F]
+      medida1: "11R22.5",
+      medida2: "11R24.5",
+      medida3: "295/75R22.5",
+      medida4: "285/75R24.5",
+      ancho1: "287",
+      ancho2: "290",
+      ancho3: "292",
+      ancho4: "287",
+      profundidad1: "9",
+      profundidad2: "9",
+      profundidad3: "9",
+      profundidad4: "9",
+      logo: [images.Firestone],
+      logo2: [images.F],
     },
   ];
 
@@ -118,14 +118,16 @@ function CatalogueEjeLibre() {
           >
             <h1 className="bg-yellow-500 w-full rounded-t-lg flex text-white font-semibold p-2 shadow-md">
               <div className="w-[90%]">{card.title}</div>
-              <div className="w-[10%]"><img className="size-6" src={card.logo2} alt="" /></div>
+              <div className="w-[10%]">
+                <img className="size-6" src={card.logo2} alt="" />
+              </div>
             </h1>
             <div className="mt-1">
-              <img className="size-28" src={card.img1} alt="" />
+              <img className="size-28" src={card.img1} alt="Llanta nueva eje libre" />
             </div>
             <div className="flex">
-              <img src={card.img2} alt="" />
-              <img src={card.img3} alt="" />
+              <img src={card.img2} alt="Eje libre" />
+              <img src={card.img3} alt="tipo de camino" />
               <img src={card.img4} alt="" />
             </div>
           </button>

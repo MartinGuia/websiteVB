@@ -99,7 +99,7 @@ function CataloguePage() {
                 <article className="flex mt-5 mb-5" key={inf.id}>
                   <img
                     src={inf.img}
-                    alt=""
+                    alt="Tipo de camino"
                     className="w-[3%] h-[2%] max-[853px]:w-[10%]"
                   />
                   <span className="ml-4">

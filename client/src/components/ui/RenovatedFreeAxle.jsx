@@ -262,10 +262,10 @@ function RenovatedFreeAxle() {
                   </div>
                 </h1>
                 <div className="mt-1">
-                  <img className="size-28" src={card.img1} alt="" />
+                  <img className="size-28" src={card.img1} alt="Banda renovada eje libre" />
                 </div>
                 <div className="flex">
-                  <img src={card.img2} alt="" />
+                  <img src={card.img2} alt="Tipo de camino" />
                   <img src={card.img3} alt="" />
                   <img src={card.img4} alt="" />
                 </div>

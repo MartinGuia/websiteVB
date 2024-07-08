@@ -45,7 +45,7 @@ function Menu() {
           >
             <img
               src={images.logoVB}
-              alt="Logo VitaBajío"
+              alt="VitaBajío"
               className="w-[35%] h-28 ml-6 max-[1025px]:w-[50%] max-[861px]:w-[80%] max-[541px]:w-[85%] max-[600px]:h-20 max-[346px]:ml-2 max-[346px]:w-[95%] max-[913px]:w-[68%]"
             />
           </Link>

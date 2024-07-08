@@ -11,7 +11,7 @@ function ButtonFacebook() {
 
    return (
        <button className={buttonStyle} onClick={openFacebook}>
-           <img className="w-6 h-6 mr-2" src={images.facebook} alt="" />
+           <img className="w-6 h-6 mr-2" src={images.facebook} alt="Facebook" />
            <span className="font-semibold">Facebook</span>
        </button>
    );

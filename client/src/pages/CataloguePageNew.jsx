@@ -107,7 +107,7 @@ function CataloguePage({ delay }) {
                   <h1 className="font-bold">Eje Libre</h1>
                   <p className="text-center text-sm mt-2 font-semibold max-[540px]:text-xs">
                     Neumático para uso exclusivo en semi-remolques, dollies y
-                    patines.{" "}
+                    patines.
                   </p>
                 </button>
               </div>

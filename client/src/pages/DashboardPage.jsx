@@ -3,10 +3,16 @@ import Carousel from "../components/ui/Carousel.jsx";
 import * as images from "../img/index.js";
 import { motion } from "framer-motion";
 import HomePage from "./HomePage.jsx";
+// import {Helmet} from "react-helmet";
 
 function DashboardPage({ delay }) {
   return (
     <>
+      {/* <Helmet>
+        <meta charSet="utf-8" />
+        <title>My Title</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet> */}
       <header className="">
         <Menu />
       </header>
@@ -58,7 +64,7 @@ function DashboardPage({ delay }) {
               <article className="w-[35%] flex justify-center max-[541px]:w-[100%]">
                 <img
                   src={images.main1}
-                  alt="main1"
+                  alt="Renovar llantas"
                   className="w-[90%] mt-1 max-[430px]:w-[80%] max-[853px]:w-[100%] mb-2 rounded-md shadow-md"
                 />
               </article>

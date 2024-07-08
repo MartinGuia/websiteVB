@@ -69,11 +69,11 @@ function ServicePage() {
       <main className="">
         <section className="container mx-auto py-8 ">
           <div className="flex justify-center items-center">
-            <div className="w-full md:w-2/3 lg:w-1/2 max-[430px]:w-[90%]">
-              <h1 className="text-3xl font-bold mb-1">
+            <div className=" w-full md:w-2/3 lg:w-1/2 max-[430px]:w-[90%]">
+              <title className="text-3xl font-bold mb-1 flex justify-center">
                 Proceso de Renovado de Llantas
-              </h1>
-              <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%] mb-4" />
+              </title>
+              <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-auto mb-4" />
               <div className="bg-gray-200 p-4 mb-4 rounded-lg shadow-lg text-black">
                 <div>
                   <motion.div
@@ -116,12 +116,74 @@ function ServicePage() {
             </div>
           </div>
         </section>
-        <section className="flex justify-center">
+        <section className="flex flex-col items-center">
           <article className="w-[90%]">
+            <div className="mb-4 w-[50%]">
+              <h2 className="text-3xl font-bold mb-1">
+                ¿Qué es el <span className="font-bold text-yellow-400"> renovado </span> y por que es buena inversión?
+              </h2>
+              <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-auto" />
+            </div>
+            <div>
+              <p className="text-justify">
+                Una llanta renovada, también conocida como llanta recapada,
+                reencauchada o recauchutada, es una llanta que ha sido sometida
+                a un proceso de remanufactura para reemplazar la banda de
+                rodamiento desgastada de una llanta usada. Este proceso implica
+                retirar la banda de rodamiento de la llanta gastada y colocar
+                una nueva, lo que permite extender su vida útil y aprovechar al
+                máximo la inversión realizada en las llantas.
+              </p>
+              <div className="flex flex-col">
+                <h2 className="my-2 text-lg">
+                  <i>Las llantas renovadas son una buena inversión por varias
+                  razones:</i>
+                </h2>
+                <div>
+                  <h3 className="font-bold text-yellow-400">Ahorro economico: </h3>
+                  <span>
+                    Las llantas renovadas son más económicas que las llantas
+                    nuevas, lo que permite reducir los costos de mantenimiento
+                    de flotas de vehículos y ahorrar dinero a largo plazo.
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-yellow-400">Beneficios ambientales: </h3>
+                  <span>
+                    Al utilizar llantas renovadas, se reduce la cantidad de
+                    llantas desechadas y se contribuye a la conservación del
+                    medio ambiente. Además, el proceso de renovado de llantas
+                    utiliza menos recursos naturales en comparación con la
+                    fabricación de llantas nuevas.
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-yellow-400">Mayor vida útil: </h3>
+                  <span>
+                    El proceso de renovado permite extender la vida útil de las
+                    llantas, ya que se reemplaza la banda de rodamiento
+                    desgastada. Esto significa que se puede obtener un mayor
+                    rendimiento y durabilidad de las llantas renovadas.
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-yellow-400">Seguridad y calidad: </h3>
+                  <span>
+                    Las llantas renovadas son sometidas a procesos de
+                    remanufactura que garantizan la calidad y seguridad de las
+                    mismas. Se utilizan técnicas y estándares específicos para
+                    asegurar que las llantas renovadas cumplan con los
+                    requisitos de rendimiento y seguridad.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className="w-[90%] mt-4 mb-4">
             <div className="mb-4">
-              <h1 className="text-3xl font-bold mb-1">
+              <h2 className="text-3xl font-bold mb-1">
                 Renovar en lugar de comprar
-              </h1>
+              </h2>
               <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%]" />
             </div>
             <div>
