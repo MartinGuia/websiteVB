@@ -3,16 +3,29 @@ import Carousel from "../components/ui/Carousel.jsx";
 import * as images from "../img/index.js";
 import { motion } from "framer-motion";
 import HomePage from "./HomePage.jsx";
-// import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 function DashboardPage({ delay }) {
   return (
     <>
-      {/* <Helmet>
-        <meta charSet="utf-8" />
-        <title>My Title</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet> */}
+      <Helmet>
+        <title>Inicio - VitaBajío</title>
+        <link rel="canonical" href="https://vitabajio.com/" />
+        <meta
+          name="description"
+          content="Renovamos y vendemos bandas de llantas de alta calidad. ¡Dale a tus neumáticos una nueva vida con nuestros servicios expertos!"
+        />
+        <meta
+          name="keywords"
+          content="renovados, calidad, Bandag, Firestone, premium, rendimiento, VitaBajío"
+        />
+        <meta property="og:title" content="Inicio - VitaBajío" />
+        <meta
+          property="og:description"
+          content="Renovamos y vendemos bandas de llantas de alta calidad. ¡Dale a tus neumáticos una nueva vida con nuestros servicios expertos!"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <header className="">
         <Menu />
       </header>

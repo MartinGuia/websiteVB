@@ -19,19 +19,19 @@ function Menu() {
       id: 2,
       title: "Servicios",
       //   image: dptos,
-      to: "/service",
+      to: "/servicios",
     },
     {
       id: 3,
       title: "Catalogo",
       //   image: cuentas,
-      to: "/catalogue",
+      to: "/llantas",
     },
     {
       id: 4,
       title: "Contactanos",
       //   image: mensaje,
-      to: "/contact",
+      to: "/contacto",
     },
   ];
 

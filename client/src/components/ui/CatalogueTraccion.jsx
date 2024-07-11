@@ -9,7 +9,7 @@ function CatalogueTraccion() {
       title: "M726 ELA",
       img1: [images.M726ELA],
       img2: [images.traccion],
-      img4: [images.lDistancia],
+      img3: [images.lDistancia],
       caract1:
         "- La nueva generación de M726 ELA ofrece hasta un 12% menos de resistencia al rodamiento, proporciona un desempeño superior por su diseño de alta rigidez, desgaste lento y uniforme gracias a su control de movimiento de costillas y bloques en la rotación.",
       caract2:
@@ -36,7 +36,7 @@ function CatalogueTraccion() {
       title: "M726",
       img1: [images.M726],
       img2: [images.traccion],
-      img4: [images.lDistancia],
+      img3: [images.lDistancia],
       caract1:
         "- Diseñada con banda de rodadura extra profunda para proporcionar el mejor kilometraje y tracción.",
       caract2:
@@ -54,7 +54,7 @@ function CatalogueTraccion() {
       title: "M713",
       img1: [images.M713],
       img2: [images.traccion],
-      img4: [images.lDistancia],
+      img3: [images.lDistancia],
       caract1:
         "- Está diseñada con un costado innovador INTELLISHAPE que ayuda a reducir el peso total de la llanta sin reducir durabilidad",
       caract2:
@@ -74,7 +74,7 @@ function CatalogueTraccion() {
       title: "M749",
       img1: [images.M749],
       img2: [images.traccion],
-      img4: [images.lDistancia],
+      img3: [images.lDistancia],
       caract1:
         "- Está diseñada con la tecnología ptentada WaveBelt para mejorar la durabilidad del casco y minimizar el estrés en los cinturones, manteniendo una pisada estable.",
       caract2:

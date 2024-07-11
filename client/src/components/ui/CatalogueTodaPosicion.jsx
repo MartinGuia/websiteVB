@@ -64,6 +64,7 @@ function CatalogueTodaPosicion() {
       title: "R268",
       img1: [images.R268],
       img2: [images.Regional],
+      img3: [images.lDistancia],
       caract1:
         "- Su compuesto NANOPRO TECH de clase premium que resultan en un mayor rendimiento kilométrico.",
       caract2:
@@ -140,7 +141,7 @@ function CatalogueTodaPosicion() {
       title: "R249",
       img1: [images.R249],
       img2: [images.todaPosicion],
-      img4: [images.lDistancia],
+      img3: [images.lDistancia],
       caract1:
         "- Ofrce un excelente desempeño y confort. Radio de corona y huella de pisada optimizada para brindar una mayor resistencia al desgaste irregular.",
       caract2: "- Diseño de baja resistencia al rodamiento. ",
@@ -161,7 +162,7 @@ function CatalogueTodaPosicion() {
       title: "R152",
       img1: [images.R152],
       img2: [images.todaPosicion],
-      img4: [images.lDistancia],
+      img3: [images.lDistancia],
       caract1:
         "- Ofrece un kilometraje total superior, asimismo, cuenta con expulsores de piedras en la banda de rodamiento lo cual favorece a un excelente índice de renovabilidad.",
       caract2:

@@ -2,6 +2,7 @@ import Menu from "../components/Menu.jsx";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import * as images from "../img/index.js";
+import { Helmet } from "react-helmet";
 
 function ServicePage() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -63,6 +64,18 @@ function ServicePage() {
 
   return (
     <>
+      <Helmet>
+        <title>Servicios - VitaBajío</title>
+        {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+        <meta name="description" content="Cotiza tus llantas ahora!." />
+        <meta
+          name="keywords"
+          content="calidad, llanta, renovado, premium,VitaBajío"
+        />
+        <meta property="og:title" content="Servicios - VitaBajío" />
+        <meta property="og:description" content="Cotiza tus llantas ahora!" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <header>
         <Menu />
       </header>
@@ -70,9 +83,9 @@ function ServicePage() {
         <section className="container mx-auto py-8 ">
           <div className="flex justify-center items-center">
             <div className=" w-full md:w-2/3 lg:w-1/2 max-[430px]:w-[90%]">
-              <title className="text-3xl font-bold mb-1 flex justify-center">
+              <h1 className="text-3xl font-bold mb-1 flex justify-center">
                 Proceso de Renovado de Llantas
-              </title>
+              </h1>
               <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-auto mb-4" />
               <div className="bg-gray-200 p-4 mb-4 rounded-lg shadow-lg text-black">
                 <div>
@@ -118,9 +131,11 @@ function ServicePage() {
         </section>
         <section className="flex flex-col items-center">
           <article className="w-[90%]">
-            <div className="mb-4 w-[50%]">
+            <div className="mb-4 w-[50%] max-[1280px]:w-[65%] max-[1024px]:w-[80%] max-[912px]:w-[90%]">
               <h2 className="text-3xl font-bold mb-1">
-                ¿Qué es el <span className="font-bold text-yellow-400"> renovado </span> y por que es buena inversión?
+                ¿Qué es el
+                <strong className="font-bold text-yellow-400"> renovado </strong> y
+                por que es buena inversión?
               </h2>
               <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-auto" />
             </div>
@@ -136,11 +151,15 @@ function ServicePage() {
               </p>
               <div className="flex flex-col">
                 <h2 className="my-2 text-lg">
-                  <i>Las llantas renovadas son una buena inversión por varias
-                  razones:</i>
+                  <i>
+                    Las llantas renovadas son una buena inversión por varias
+                    razones:
+                  </i>
                 </h2>
                 <div>
-                  <h3 className="font-bold text-yellow-400">Ahorro economico: </h3>
+                  <h3 className="font-bold text-yellow-400">
+                    Ahorro economico:{" "}
+                  </h3>
                   <span>
                     Las llantas renovadas son más económicas que las llantas
                     nuevas, lo que permite reducir los costos de mantenimiento
@@ -148,7 +167,9 @@ function ServicePage() {
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-yellow-400">Beneficios ambientales: </h3>
+                  <h3 className="font-bold text-yellow-400">
+                    Beneficios ambientales:{" "}
+                  </h3>
                   <span>
                     Al utilizar llantas renovadas, se reduce la cantidad de
                     llantas desechadas y se contribuye a la conservación del
@@ -158,7 +179,9 @@ function ServicePage() {
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-yellow-400">Mayor vida útil: </h3>
+                  <h3 className="font-bold text-yellow-400">
+                    Mayor vida útil:{" "}
+                  </h3>
                   <span>
                     El proceso de renovado permite extender la vida útil de las
                     llantas, ya que se reemplaza la banda de rodamiento
@@ -167,7 +190,9 @@ function ServicePage() {
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-yellow-400">Seguridad y calidad: </h3>
+                  <h3 className="font-bold text-yellow-400">
+                    Seguridad y calidad:{" "}
+                  </h3>
                   <span>
                     Las llantas renovadas son sometidas a procesos de
                     remanufactura que garantizan la calidad y seguridad de las
@@ -180,11 +205,11 @@ function ServicePage() {
             </div>
           </article>
           <article className="w-[90%] mt-4 mb-4">
-            <div className="mb-4">
-              <h2 className="text-3xl font-bold mb-1">
+            <div className="mb-4 w-[50%] max-[1280px]:w-[65%] max-[1024px]:w-[80%] max-[912px]:w-[90%]">
+              <h2 className="text-3xl font-bold mb-1 max-[540px]:justify-center max-[540px]:flex">
                 Renovar en lugar de comprar
               </h2>
-              <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-[50%]" />
+              <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-auto" />
             </div>
             <div>
               <p className="text-justify">

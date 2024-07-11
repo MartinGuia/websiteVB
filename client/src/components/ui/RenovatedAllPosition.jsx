@@ -299,7 +299,7 @@ function RenovatedAllPosition() {
               </div>
             </h1>
             <div className="mt-1">
-              <img className="size-28" src={card.img1} alt="Banda renovada toda posición" />
+              <img className="size-28" src={card.img1} alt="Llanta renovada toda posición" />
             </div>
             <div className="flex">
               <img src={card.img2} alt="Toda Posición" />

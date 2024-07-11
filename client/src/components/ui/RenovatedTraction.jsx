@@ -525,7 +525,7 @@ function RenovatedTraction() {
                   </div>
                 </h1>
                 <div className="mt-1">
-                  <img className="size-28" src={card.img1} alt="Banda renovada de tracción" />
+                  <img className="size-28" src={card.img1} alt="Llanta renovada de tracción" />
                 </div>
                 <div className="flex">
                   <img src={card.img2} alt="Tracción" />

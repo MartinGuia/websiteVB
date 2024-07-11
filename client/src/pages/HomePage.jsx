@@ -30,7 +30,7 @@ function HomePage() {
 
   return (
     <main>
-      <div className="flex bg-gradient-to-br from-slate-800 to-slate-900 h-screen max-[912px]:flex-col max-[912px]:justify-start">
+      <div className="flex h-screen max-[912px]:flex-col max-[912px]:justify-start">
         <section className="w-[50%] flex flex-col justify-center items-center animate__animated animate__slideInUp max-[912px]:w-[100%] max-[912px]:mt-10">
           <article className="flex flex-col w-[50%]">
             <div className="text-9xl font-bold flex max-[1368px]:text-8xl max-[540px]:text-6xl max-[376px]:text-5xl">
@@ -46,18 +46,18 @@ function HomePage() {
           </article>
           <article className="mt-4 w-[50%] text-justify flex flex-col max-[540px]:w-[80%]">
             <div className="">
-              <h1 className="text-2xl text-yellow-500 max-[1024px]:text-lg max-[912px]:text-2xl max-[376px]:text-xl">
+              <p className="text-2xl text-yellow-500 max-[1024px]:text-lg max-[912px]:text-2xl max-[376px]:text-xl">
                 Mito
-              </h1>
+              </p>
               <p className="max-[1024px]:text-sm max-[912px]:text-lg max-[376px]:text-sm">
                 {textos[indice].mito}
               </p>
               {/* Muestra el mito correspondiente al índice */}
             </div>
             <div className="mt-2">
-              <h1 className="text-2xl text-yellow-500 max-[1024px]:text-lg max-[912px]:text-2xl max-[376px]:text-xl">
+              <p className="text-2xl text-yellow-500 max-[1024px]:text-lg max-[912px]:text-2xl max-[376px]:text-xl">
                 Realidad
-              </h1>
+              </p>
               <p className="max-[1025px]:text-sm max-[912px]:text-lg max-[376px]:text-sm">
                 {textos[indice].realidad}
               </p>
@@ -66,17 +66,17 @@ function HomePage() {
           </article>
         </section>
         <section className="w-[50%] flex flex-col justify-center items-center animate__animated animate__slideInUp max-[912px]:w-[100%] ">
-          <article className="animate-spin-slow w-[55%] max-[1368px]:w-[50%] max-[912px]:w-[40%] max-[540px]:w-[30%] max-[912px]:mt-4">
+          <article className=" w-[70%] max-[1368px]:w-[50%] max-[912px]:w-[40%] max-[540px]:w-[30%] max-[912px]:mt-4">
             <img
               className="drop-shadow-2xl w-[100%]"
-              src={images.rueda}
+              src={images.VB}
               alt=""
             />
           </article>
           <article className="mt-16 max-[540px]:mt-10">
             <button>
               <Link
-                to="/quotation"
+                to="/cotizacion"
                 className="cursor-pointer bg-yellow-500 shadow-lg shadow-yellow-500/50 rounded-lg px-14 py-4"
               >
                 Solicitar cotización

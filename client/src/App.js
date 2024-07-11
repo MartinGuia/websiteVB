@@ -14,13 +14,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<DashboardPage/>} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/service" element={<ServicePage />} />
-        <Route path="/catalogue" element={<CataloguePage />} />
-        <Route path="/quotation" element={<QuotationPage/>} />
-        <Route path="/catalogueNew" element={<CataloguePageNew />} />
-        <Route path="/catalogueRenovated" element={<CataloguePageRenovated/>} />
-        <Route path="/contact" element={<ContactPage />} />
+        {/* <Route path="/home" element={<HomePage />} /> */}
+        <Route path="/servicios" element={<ServicePage />} />
+        <Route path="/llantas" element={<CataloguePage />} />
+        <Route path="/cotizacion" element={<QuotationPage/>} />
+        <Route path="/catalogo-nuevo" element={<CataloguePageNew />} />
+        <Route path="/catalogo-renovado" element={<CataloguePageRenovated/>} />
+        <Route path="/contacto" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );

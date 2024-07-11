@@ -2,6 +2,7 @@ import React from "react";
 import Menu from "../components/Menu";
 import Card from "../components/ui/Card";
 import * as images from "../img/index.js";
+import { Helmet } from "react-helmet";
 
 function CataloguePage() {
   const Info = [
@@ -51,6 +52,24 @@ function CataloguePage() {
 
   return (
     <>
+      <Helmet>
+        <title>Catalogo - VitaBajío</title>
+        <link rel="canonical" href="https://vitabajio.com/" />
+        <meta
+          name="description"
+          content="Encuentra la mejor selección de llantas nuevas y renovadas en nuestra tienda en línea. Somos expertos en la renovación y venta de bandas de llantas para ofrecerte calidad y seguridad en cada viaje."
+        />
+        <meta
+          name="keywords"
+          content="catálogo, llantas, nuevas, renovadas, modelos, distancia, VitaBajío"
+        />
+        <meta property="og:title" content="Catalogo - VitaBajío" />
+        <meta
+          property="og:description"
+          content="Encuentra la mejor selección de llantas nuevas y renovadas en nuestra tienda en línea. Somos expertos en la renovación y venta de bandas de llantas para ofrecerte calidad y seguridad en cada viaje."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <header>
         <Menu />
       </header>
@@ -58,18 +77,23 @@ function CataloguePage() {
         <section className="flex flex-col items-center mt-4">
           <article className="w-[45%] text-center max-[520px]:w-[80%]">
             <h1 className="text-3xl font-bold text-white">
-              Un<span className="text-yellow-400"> stock variado </span>para
+              Un<strong className="font-bold text-yellow-400" > stock variado </strong>para
               todo tipo de terreno
             </h1>
             <hr className="border-b-2 border-yellow-400 rounded-md drop-shadow-md w-auto mt-2" />
           </article>
           <article className="w-[70%] mt-4 max-[520px]:w-[90%]">
             <p className="text-center text-lg">
-              En nuestro sitio web, nos enorgullece ofrecer un conocimiento
-              profundo del mercado y una amplia gama de productos. Desde llantas
-              renovadas hasta llantas nuevas, contamos con un variado stock que
-              se adapta a tus necesidades. Descubre cómo podemos ayudarte a
-              encontrar la opción perfecta para tu vehículo y presupuesto
+              "Explora nuestro catálogo en línea y descubre la mejor selección
+              de llantas nuevas y bandas renovadas para tus vehículos. En
+              nuestra página de catálogo, te ofrecemos la conveniencia de elegir
+              entre dos opciones: una sección dedicada a las llantas nuevas,
+              donde encontrarás una amplia variedad de modelos para
+              satisfacer tus necesidades y preferencias; y otra sección dedicada
+              a las bandas renovadas, donde podrás encontrar opciones económicas
+              y de calidad para prolongar la vida útil de tus llantas. Confía en
+              nuestra experiencia y encuentra la opción perfecta para optimizar
+              el rendimiento y seguridad de tus vehículos. 
             </p>
           </article>
         </section>
@@ -77,12 +101,12 @@ function CataloguePage() {
           <div className="flex justify-around ">
             <div className="grid grid-cols-2 gap-8 max-w-5xl mx-2">
               <Card
-                to={`/catalogueNew`}
+                to={`/catalogo-nuevo`}
                 imagen={images.FD663}
                 titulo="Llanta Nueva"
               />
               <Card
-                to={`/catalogueRenovated`}
+                to={`/catalogo-renovado`}
                 imagen={images.bandaRenovada}
                 titulo="Banda Renovada"
               />
@@ -91,9 +115,9 @@ function CataloguePage() {
         </section>
         <section>
           <div className="flex flex-col items-center mt-4">
-            <h1 className="flex justify-center text-3xl font-bold mt-4">
+            <p className="flex justify-center text-3xl font-bold mt-4">
               Aplicación
-            </h1>
+            </p>
             <div className="w-[80%] bg-slate-100 mt-4 shadow-lg rounded-lg mb-2">
               {Info.map((inf) => (
                 <article className="flex mt-5 mb-5" key={inf.id}>
